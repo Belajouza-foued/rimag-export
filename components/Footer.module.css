@@ -1,0 +1,329 @@
+.footer {
+    padding: 70px 0 0;
+
+    background: #071B2E;
+
+    color: rgba(255, 255, 255, .7);
+}
+
+
+/* =====================================================
+   GRID PRINCIPALE
+===================================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+
+/* =====================================================
+   COLONNE MARQUE
+===================================================== */
+
+.brandCol {
+    padding-right: 20px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    text-decoration: none;
+}
+
+.brandLogo {
+    width: 56px;
+    height: 56px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    background: var(--white);
+
+    padding: 6px;
+}
+
+.brandName {
+    color: var(--white);
+
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.brandText {
+    max-width: 340px;
+    margin: 0 0 24px;
+
+    color: rgba(255, 255, 255, .6);
+
+    font-size: 13.5px;
+    line-height: 1.8;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .08);
+    color: var(--white);
+
+    font-size: 15px;
+
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.social a:hover {
+    background: var(--red);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   COLONNES NAVIGATION / PRODUITS / CONTACT
+===================================================== */
+
+.col h4 {
+    margin-bottom: 20px;
+
+    color: var(--white);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+.col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col ul li {
+    margin-bottom: 12px;
+}
+
+.col ul a {
+    color: rgba(255, 255, 255, .65);
+
+    font-size: 13.5px;
+    text-decoration: none;
+
+    transition: color var(--transition), padding-left var(--transition);
+}
+
+.col ul a:hover {
+    color: var(--yellow);
+    padding-left: 4px;
+}
+
+.viewAll {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 7px;
+
+    color: var(--yellow) !important;
+    font-weight: 700;
+}
+
+.viewAll i {
+    font-size: 11px;
+    transition: transform var(--transition);
+}
+
+.viewAll:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contactList {
+    margin-bottom: 22px;
+}
+
+.contactList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: rgba(255, 255, 255, .65);
+
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+.contactList i {
+    flex-shrink: 0;
+    margin-top: 2px;
+
+    color: var(--yellow);
+    font-size: 13px;
+}
+
+.contactList a {
+    color: rgba(255, 255, 255, .65);
+    text-decoration: none;
+
+    transition: color var(--transition);
+}
+
+.contactList a:hover {
+    color: var(--yellow);
+}
+
+.ctaBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: var(--red);
+    color: var(--white);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: background var(--transition), transform var(--transition);
+}
+
+.ctaBtn:hover {
+    background: var(--red-dark);
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   BARRE DU BAS
+===================================================== */
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+    flex-wrap: wrap;
+
+    padding: 22px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, .1);
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.bottomLinks {
+    display: flex;
+    gap: 22px;
+}
+
+.bottomLinks a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+
+    transition: color var(--transition);
+}
+
+.bottomLinks a:hover {
+    color: var(--yellow);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .brandCol {
+        grid-column: 1 / -1;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+
+        text-align: center;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .brandText {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .col ul a:hover {
+        padding-left: 0;
+    }
+
+    .contactList li {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .ctaBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottomLinks {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#003B73"/>
+      <stop offset="100%" stop-color="#0057A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#bg)"/>
+
+  <!-- world dots / trade routes -->
+  <circle cx="800" cy="350" r="260" fill="none" stroke="#EAF3FB" stroke-width="1.2" opacity="0.18"/>
+  <ellipse cx="800" cy="350" rx="260" ry="95" fill="none" stroke="#EAF3FB" stroke-width="1" opacity="0.15"/>
+  <ellipse cx="800" cy="350" rx="260" ry="180" fill="none" stroke="#EAF3FB" stroke-width="1" opacity="0.15"/>
+  <line x1="540" y1="350" x2="1060" y2="350" stroke="#EAF3FB" stroke-width="1" opacity="0.15"/>
+  <line x1="800" y1="150" x2="800" y2="550" stroke="#EAF3FB" stroke-width="1" opacity="0.15"/>
+
+  <g fill="none" stroke="#F4C430" stroke-width="2" stroke-dasharray="2 8" opacity="0.8">
+    <path d="M540 260 Q700 190 900 240 Q1060 280 1090 400"/>
+    <path d="M580 460 Q650 540 800 540 Q950 540 1010 450"/>
+  </g>
+  <g fill="#F4C430">
+    <circle cx="540" cy="260" r="6"/>
+    <circle cx="900" cy="240" r="6"/>
+    <circle cx="1090" cy="400" r="6"/>
+    <circle cx="580" cy="460" r="6"/>
+    <circle cx="1010" cy="450" r="6"/>
+  </g>
+
+  <!-- soft container/office blocks bottom -->
+  <g opacity="0.14">
+    <rect x="120" y="560" width="90" height="60" fill="#FFFFFF"/>
+    <rect x="220" y="530" width="90" height="90" fill="#FFFFFF"/>
+    <rect x="1350" y="540" width="90" height="80" fill="#FFFFFF"/>
+    <rect x="1450" y="500" width="90" height="120" fill="#FFFFFF"/>
+  </g>
+
+  <!-- scattered dots -->
+  <g fill="#FFFFFF" opacity="0.12">
+    <circle cx="200" cy="150" r="2.4"/><circle cx="260" cy="200" r="1.8"/>
+    <circle cx="1400" cy="160" r="2.4"/><circle cx="1460" cy="220" r="1.8"/>
+    <circle cx="120" cy="420" r="2"/><circle cx="1500" cy="380" r="2"/>
+  </g>
+</svg>
