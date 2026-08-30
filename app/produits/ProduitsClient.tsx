@@ -4,8 +4,11 @@ import { useMemo, useState } from "react";
 import { categories, allProductsCount } from "./data";
 import ProductTile from "./ProductTile";
 import styles from "./produits.module.css";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function ProduitsClient() {
+  const { t } = useLanguage();
+
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -23,15 +26,19 @@ export default function ProduitsClient() {
         products: cat.products.filter((product) => {
           if (!searchTerm) return true;
 
+          const productName = t(product.name);
+          const productDescription = t(product.description);
+          const categoryLabel = t(cat.label);
+
           return (
-            product.name.toLowerCase().includes(searchTerm) ||
-            product.description.toLowerCase().includes(searchTerm) ||
-            cat.label.toLowerCase().includes(searchTerm)
+            productName.toLowerCase().includes(searchTerm) ||
+            productDescription.toLowerCase().includes(searchTerm) ||
+            categoryLabel.toLowerCase().includes(searchTerm)
           );
         }),
       }))
       .filter((cat) => cat.products.length > 0);
-  }, [search, activeCategory]);
+  }, [search, activeCategory, t]);
 
   const visibleProductsCount = filteredCategories.reduce(
     (total, category) => total + category.products.length,
@@ -51,16 +58,19 @@ export default function ProduitsClient() {
       <section className={styles.toolbar}>
         <div className="container">
           <div className={styles.toolbarInner}>
-            {/* Recherche */}
+
+            {/* RECHERCHE */}
             <div className={styles.search}>
               <i className="bi bi-search"></i>
 
               <input
                 type="search"
                 value={search}
-                onChange={(event) => setSearch(event.target.value)}
-                placeholder="Rechercher un produit..."
-                aria-label="Rechercher un produit"
+                onChange={(event) =>
+                  setSearch(event.target.value)
+                }
+                placeholder={t("products.search")}
+                aria-label={t("products.search")}
               />
 
               {search && (
@@ -68,24 +78,28 @@ export default function ProduitsClient() {
                   type="button"
                   className={styles.searchClear}
                   onClick={() => setSearch("")}
-                  aria-label="Effacer la recherche"
+                  aria-label={t("products.clear")}
                 >
                   <i className="bi bi-x"></i>
                 </button>
               )}
             </div>
 
-            {/* Filtres */}
+            {/* FILTRES */}
             <div className={styles.filters}>
+
               <button
                 type="button"
                 className={`${styles.filterChip} ${
-                  activeCategory === "all" ? styles.active : ""
+                  activeCategory === "all"
+                    ? styles.active
+                    : ""
                 }`}
                 onClick={() => setActiveCategory("all")}
               >
                 <i className="bi bi-grid"></i>
-                Tous
+
+                {t("products.all")}
               </button>
 
               {categories.map((cat) => (
@@ -93,21 +107,30 @@ export default function ProduitsClient() {
                   key={cat.id}
                   type="button"
                   className={`${styles.filterChip} ${
-                    activeCategory === cat.id ? styles.active : ""
+                    activeCategory === cat.id
+                      ? styles.active
+                      : ""
                   }`}
-                  onClick={() => setActiveCategory(cat.id)}
+                  onClick={() =>
+                    setActiveCategory(cat.id)
+                  }
                 >
                   <i className={cat.icon}></i>
-                  {cat.shortLabel}
+
+                  {t(cat.shortLabel)}
                 </button>
               ))}
             </div>
 
-            {/* Compteur */}
+            {/* COMPTEUR */}
             <div className={styles.count}>
               <strong>{visibleProductsCount}</strong>{" "}
-              {visibleProductsCount > 1 ? "produits" : "produit"} /{" "}
-              {allProductsCount}
+
+              {visibleProductsCount > 1
+                ? t("products.products")
+                : t("products.product")}{" "}
+
+              / {allProductsCount}
             </div>
           </div>
         </div>
@@ -118,24 +141,36 @@ export default function ProduitsClient() {
       ===================================================== */}
       <section className={styles.catalog}>
         <div className="container">
+
           {filteredCategories.length > 0 ? (
             filteredCategories.map((cat) => (
-              <section key={cat.id} id={cat.id} className={styles.category}>
-                {/* Header catégorie */}
+              <section
+                key={cat.id}
+                id={cat.id}
+                className={styles.category}
+              >
+                {/* HEADER CATÉGORIE */}
                 <div className={styles.categoryHead}>
                   <div>
-                    <h2>{cat.label}</h2>
-                    <span>{cat.description}</span>
+
+                    {/* TRADUCTION */}
+                    <h2>{t(cat.label)}</h2>
+
+                    {/* TRADUCTION */}
+                    <span>
+                      {t(cat.description)}
+                    </span>
+
                   </div>
                 </div>
 
-                {/* Produits */}
+                {/* PRODUITS */}
                 <div className={styles.grid}>
                   {cat.products.map((product, index) => (
                     <ProductTile
                       key={product.id}
                       product={product}
-                      categoryLabel={cat.shortLabel}
+                      categoryLabel={t(cat.shortLabel)}
                       index={index}
                     />
                   ))}
@@ -143,21 +178,26 @@ export default function ProduitsClient() {
               </section>
             ))
           ) : (
-            /* =================================================
-               EMPTY STATE
-            ================================================= */
             <div className={styles.empty}>
               <i className="bi bi-search"></i>
 
-              <h3>Aucun produit trouvé</h3>
+              <h3>
+                {t("products.noResults")}
+              </h3>
 
-              <p>Aucun produit ne correspond à votre recherche.</p>
+              <p>
+                {t("products.noResultsDescription")}
+              </p>
 
-              <button type="button" onClick={clearSearch}>
-                Réinitialiser la recherche
+              <button
+                type="button"
+                onClick={clearSearch}
+              >
+                {t("products.reset")}
               </button>
             </div>
           )}
+
         </div>
       </section>
     </>

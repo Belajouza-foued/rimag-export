@@ -575,80 +575,80 @@ products: {
       label: "Biscuits",
       shortLabel: "Biscuits",
       description:
-        "Biscuits de qualité adaptés aux marchés internationaux, avec différentes références destinées aux distributeurs et grossistes.",
+        "Biscuits tunisiens sélectionnés pour leur qualité, leur goût et leur présentation, adaptés aux marchés internationaux.",
     },
 
     chocolat: {
       label: "Chocolat",
       shortLabel: "Chocolat",
       description:
-        "Une sélection de produits chocolatés de qualité, adaptée aux besoins des distributeurs et aux marchés internationaux.",
+        "Produits chocolatés sélectionnés pour leur qualité, leur goût et leur conditionnement, adaptés à l'exportation.",
     },
 
     fromage: {
       label: "Fromages",
       shortLabel: "Fromages",
       description:
-        "Sélection de fromages et produits fromagers destinée aux professionnels, distributeurs et marchés internationaux.",
+        "Une sélection de fromages et produits fromagers choisis pour leur qualité, leur goût et leur régularité. Une gamme adaptée aux besoins des distributeurs, grossistes, hôtels, restaurants et professionnels de l'agroalimentaire, avec différents formats et conditionnements disponibles selon les exigences des marchés internationaux.",
     },
 
     lait: {
       label: "Produits laitiers",
       shortLabel: "Lait",
       description:
-        "Produits laitiers sélectionnés pour leur qualité et adaptés aux besoins des distributeurs et importateurs.",
+        "Une sélection de produits laitiers de qualité, adaptée aux besoins des distributeurs, importateurs et marchés internationaux.",
     },
 
     pates: {
       label: "Pâtes alimentaires",
       shortLabel: "Pâtes",
       description:
-        "Pâtes alimentaires de qualité, adaptées à la distribution et aux marchés internationaux.",
+        "Des pâtes alimentaires de qualité, adaptées aux besoins des distributeurs, grossistes et marchés internationaux.",
     },
 
     riz: {
       label: "Riz",
       shortLabel: "Riz",
       description:
-        "Riz sélectionné pour sa qualité et adapté aux besoins des importateurs, grossistes et distributeurs alimentaires.",
+        "Une sélection de riz de qualité destinée aux importateurs, distributeurs et professionnels des marchés alimentaires internationaux.",
     },
 
     frites: {
       label: "Frites surgelées",
       shortLabel: "Frites",
       description:
-        "Frites de pommes de terre sélectionnées, adaptées aux professionnels de la restauration et aux réseaux de distribution.",
+        "Frites surgelées sélectionnées pour leur qualité, leur texture et leur régularité, adaptées à la restauration et à la distribution.",
     },
 
-    pommesDeTerre: {
+    "pommes-de-terre": {
       label: "Pommes de terre",
       shortLabel: "Pommes de terre",
       description:
-        "Pommes de terre sélectionnées pour leur qualité et leur conservation, destinées aux marchés professionnels et internationaux.",
+        "Pommes de terre sélectionnées pour leur fraîcheur, leur qualité et leur bonne tenue pendant le transport.",
     },
 
     poulet: {
       label: "Poulet",
       shortLabel: "Poulet",
       description:
-        "Produits de volaille sélectionnés selon les besoins des professionnels, distributeurs et marchés d'exportation.",
+        "Produits de poulet sélectionnés selon des critères stricts de qualité, de fraîcheur et de conformité.",
     },
 
     mayonnaise: {
       label: "Mayonnaise",
       shortLabel: "Mayonnaise",
       description:
-        "Mayonnaise destinée aux professionnels de la restauration, aux distributeurs et aux marchés alimentaires internationaux.",
+        "Mayonnaise sélectionnée pour sa qualité, sa texture et son goût, adaptée aux marchés de la distribution alimentaire.",
     },
 
     moutarde: {
       label: "Moutarde",
       shortLabel: "Moutarde",
       description:
-        "Moutarde de qualité adaptée aux professionnels de l'agroalimentaire, aux distributeurs et aux marchés internationaux.",
+        "Moutarde sélectionnée pour son goût et sa qualité, destinée aux distributeurs et importateurs internationaux.",
     },
 
-    harissa: {
+    "produits-alimentaires": {
       label: "Harissa",
       shortLabel: "Alimentaire",
       description:
@@ -662,9 +662,9 @@ products: {
         "Une sélection de jus de fruits destinée aux distributeurs, importateurs, grossistes, hôtels, restaurants et professionnels de la grande distribution.",
     },
 
-    conservesMer: {
+    "conserves-mer": {
       label: "Conserves de la mer",
-      shortLabel: "Conserves de la mer",
+      shortLabel: "Conserves",
       description:
         "Une sélection de produits de la mer conditionnés pour la distribution, les grossistes, la restauration et les marchés internationaux.",
     },
@@ -676,7 +676,7 @@ products: {
         "Une sélection de produits d'hygiène destinée aux distributeurs, grossistes, enseignes de la grande distribution et marchés internationaux.",
     },
 
-    fournituresBureau: {
+    "fournitures-bureau": {
       label: "Fournitures de bureau et scolaires",
       shortLabel: "Bureau & Scolaire",
       description:
@@ -695,64 +695,64 @@ products: {
     dattes: {
       name: "Dattes Deglet Nour",
       description:
-        "Dattes tunisiennes Deglet Nour de qualité premium, calibrées et triées avec soin. Leur goût miellé caractéristique et leur conservation naturelle sont particulièrement recherchés par les importateurs et distributeurs.",
+        "Dattes tunisiennes Deglet Nour de qualité premium, calibrées et triées avec soin. Leur goût miellé caractéristique et leur conservation naturelle sont particulièrement recherchés par les importateurs et distributeurs sur les marchés internationaux, notamment en période de fêtes.",
     },
 
-    huiles: {
+    "huile-olive-extra-vierge": {
       name: "Huile d'olive extra vierge",
       description:
-        "Huile d'olive extra vierge tunisienne, extraite à froid pour préserver ses qualités aromatiques et nutritionnelles. Elle se distingue par son goût fruité, sa faible acidité et sa légère sensation poivrée.",
+        "Huile d'olive extra vierge tunisienne, extraite à froid pour préserver toutes ses qualités aromatiques et nutritionnelles. Elle se distingue par son goût fruité, sa faible acidité et une légère sensation poivrée en bouche, typique des meilleurs terroirs oléicoles tunisiens.",
     },
 
-    tomates: {
+    "tomates-tunisiennes": {
       name: "Tomates tunisiennes",
       description:
-        "Tomates tunisiennes sélectionnées pour leur fraîcheur, leur couleur homogène et leur bonne tenue au transport. Elles conviennent aussi bien à la vente en frais qu'à la transformation industrielle.",
+        "Tomates tunisiennes cultivées dans des conditions optimales, sélectionnées pour leur fraîcheur, leur couleur homogène et leur bonne tenue au transport. Elles répondent aux exigences de qualité des marchés internationaux et conviennent aussi bien à la vente en frais qu'à la transformation industrielle.",
     },
 
-    biscuits: {
+    "biscuits-tunisiens": {
       name: "Biscuits",
       description:
-        "Une sélection de biscuits tunisiens fabriqués selon des standards de qualité rigoureux, disponibles en plusieurs références et formats de conditionnement.",
+        "Une sélection de biscuits fabriqués selon des standards de qualité rigoureux, disponibles en plusieurs références et formats de conditionnement. Adaptés aux réseaux de distribution, grossistes et enseignes à la recherche de produits fiables pour leurs rayons.",
     },
 
     chocolat: {
       name: "Chocolat",
       description:
-        "Produits chocolatés sélectionnés pour leur qualité constante et leur bon rapport qualité-prix, disponibles dans différents formats.",
+        "Produits chocolatés sélectionnés pour leur qualité constante et leur bon rapport qualité-prix, disponibles dans différents formats. Une gamme adaptée aux besoins des distributeurs, grossistes et marchés internationaux.",
     },
 
     fromage: {
       name: "Fromages",
       description:
-        "Une sélection de produits fromagers choisis pour leur qualité et leur régularité, adaptée aux besoins de la restauration, de la distribution et de l'export.",
+        "Une sélection de fromages et produits fromagers choisis pour leur qualité, leur goût et leur régularité. Une gamme adaptée aux besoins des distributeurs, grossistes, hôtels, restaurants et professionnels de l'agroalimentaire, avec différents formats et conditionnements disponibles selon les exigences des marchés internationaux.",
     },
 
     lait: {
       name: "Produits laitiers",
       description:
-        "Gamme de produits laitiers sélectionnés pour leur qualité et leur stabilité de conservation, adaptée aux marchés professionnels et à la distribution à grande échelle.",
+        "Une gamme de produits laitiers comprenant notamment du lait UHT et de la poudre de lait, sélectionnés pour leur qualité, leur régularité et leur bonne stabilité de conservation. Ces produits sont adaptés aux besoins des distributeurs, grossistes, importateurs, hôtels, restaurants et professionnels de l'agroalimentaire. Différents formats et conditionnements peuvent être proposés selon les volumes, les exigences logistiques et les spécificités des marchés internationaux.",
     },
 
-    pates: {
+    "pates-alimentaires": {
       name: "Pâtes alimentaires",
       description:
-        "Pâtes alimentaires fabriquées à partir de semoule de qualité, disponibles dans plusieurs formats et grammages, avec des options de conditionnement adaptées à l'export.",
+        "Une gamme de pâtes alimentaires fabriquées à partir de semoule de qualité, sélectionnées pour leur régularité, leur bonne tenue à la cuisson et leur qualité constante. Disponibles dans différents formats, formes et conditionnements, elles répondent aux besoins des distributeurs, grossistes, importateurs, hôtels, restaurants et professionnels de l'agroalimentaire. Des solutions de conditionnement adaptées peuvent être proposées selon les volumes et les exigences des marchés internationaux.",
     },
 
     riz: {
       name: "Riz",
       description:
-        "Riz sélectionné pour sa qualité constante et sa bonne tenue à la cuisson, disponible en plusieurs variétés et conditionnements.",
+        "Riz soigneusement sélectionné pour sa qualité, sa régularité et sa bonne tenue à la cuisson. Disponible en différentes variétés et conditionnements, il répond aux besoins des importateurs, distributeurs, grossistes, professionnels de la restauration et acteurs de l'agroalimentaire. Une offre adaptée à l'approvisionnement en volume et aux exigences des marchés internationaux.",
     },
 
-    frites: {
+    "frites-surgelees": {
       name: "Frites surgelées",
       description:
         "Frites de pommes de terre surgelées, prêtes à cuire, sélectionnées pour leur texture et leur régularité de calibrage.",
     },
 
-    pommesDeTerre: {
+    "pommes-de-terre": {
       name: "Pommes de terre",
       description:
         "Pommes de terre sélectionnées pour leur calibre homogène et leur bonne aptitude à la conservation longue durée.",
@@ -782,7 +782,7 @@ products: {
         "Harissa tunisienne préparée à partir de piments soigneusement sélectionnés, offrant un goût authentique et un profil épicé apprécié dans la cuisine tunisienne et internationale.",
     },
 
-    jus: {
+    "jus-de-fruits": {
       name: "Jus et boissons",
       description:
         "Une gamme de jus de fruits sélectionnés pour leur qualité, leur goût et leur fraîcheur, disponibles en différents parfums et formats.",
@@ -800,19 +800,19 @@ products: {
         "Thon de qualité sélectionné et conditionné avec soin afin de préserver sa texture, sa saveur et ses qualités naturelles.",
     },
 
-    papier: {
+    "papier-hygienique": {
       name: "Papier hygiénique",
       description:
         "Produits en papier destinés à l'hygiène quotidienne et aux besoins professionnels, avec différents formats et conditionnements.",
     },
 
-    nettoyage: {
+    "Produits de nettoyage": {
       name: "Produits de nettoyage",
       description:
         "Une gamme de produits de nettoyage et d'entretien destinée aux particuliers et aux professionnels.",
     },
 
-    couches: {
+    "couches-bebe": {
       name: "Couches bébé",
       description:
         "Une gamme de couches bébé conçues pour offrir confort, douceur et protection au quotidien.",
@@ -836,7 +836,7 @@ products: {
         "Feutres, marqueurs et instruments de coloriage destinés aux écoles, bureaux et distributeurs.",
     },
 
-    fournitures: {
+    "fournitures-scolaires": {
       name: "Fournitures scolaires",
       description:
         "Une sélection d'articles scolaires comprenant accessoires d'écriture, classement, dessin et organisation.",
@@ -869,10 +869,22 @@ products: {
   noResults: "Aucun produit trouvé",
   noResultsDescription: "Aucun produit ne correspond à votre recherche.",
   reset: "Réinitialiser la recherche",
+  readMore: "Lire la suite",
+  readLess: "Lire moins",
+  requestQuote: "Demander un devis",
 },
 
-  
- 
+  readMore: "Lire la suite",
+readLess: "Lire moins",
+requestQuote: "Demander un devis",
+  search: "Rechercher un produit...",
+  clear: "Effacer la recherche",
+  all: "Tous",
+  product: "produit",
+   noResults: "Aucun produit trouvé",
+  noResultsDescription:
+    "Aucun produit ne correspond à votre recherche.",
+  reset: "Réinitialiser la recherche",
 
   },
   en: {
@@ -1416,328 +1428,325 @@ faqBadgeText:
 products: {
   categories: {
     dattes: {
-      label: "Dattes tunisiennes",
-      shortLabel: "Dattes",
-      description:
-        "Dattes tunisiennes Deglet Nour, sélectionnées avec soin pour leur qualité, leur goût et leur aptitude à l'exportation.",
-    },
+      label: "Tunisian Dates",
+      shortLabel: "Dates",
+         },
 
     huiles: {
-      label: "Huiles d'olive",
-      shortLabel: "Huiles",
+      label: "Olive Oils",
+      shortLabel: "Oils",
       description:
-        "Huile d'olive tunisienne extra vierge, issue d'olives soigneusement sélectionnées et destinée aux marchés internationaux.",
+        "Tunisian extra virgin olive oil, made from carefully selected olives and intended for international markets.",
     },
 
     tomates: {
-      label: "Tomates",
-      shortLabel: "Tomates",
+      label: "Tomatoes",
+      shortLabel: "Tomatoes",
       description:
-        "Tomates tunisiennes sélectionnées pour leur fraîcheur et leur qualité, adaptées aux besoins des importateurs et distributeurs.",
+        "Tunisian tomatoes selected for their freshness and quality, suitable for the needs of importers and distributors.",
     },
 
     biscuits: {
       label: "Biscuits",
       shortLabel: "Biscuits",
       description:
-        "Biscuits de qualité adaptés aux marchés internationaux, avec différentes références destinées aux distributeurs et grossistes.",
+        "Tunisian biscuits selected for their quality, taste and presentation, suitable for international markets.",
     },
 
     chocolat: {
-      label: "Chocolat",
-      shortLabel: "Chocolat",
+      label: "Chocolate",
+      shortLabel: "Chocolate",
       description:
-        "Une sélection de produits chocolatés de qualité, adaptée aux besoins des distributeurs et aux marchés internationaux.",
+        "High-quality Tunisian dates, carefully selected to meet the requirements of international markets.",
     },
 
     fromage: {
-      label: "Fromages",
-      shortLabel: "Fromages",
+      label: "Cheese",
+      shortLabel: "Cheese",
       description:
-        "Sélection de fromages et produits fromagers destinée aux professionnels, distributeurs et marchés internationaux.",
+        "A selection of cheese and dairy products chosen for their quality, taste and consistency. A range designed to meet the needs of distributors, wholesalers, hotels, restaurants and food industry professionals, with different formats and packaging options available for international markets.",
     },
 
     lait: {
-      label: "Produits laitiers",
-      shortLabel: "Lait",
+      label: "Dairy Products",
+      shortLabel: "Dairy",
       description:
-        "Produits laitiers sélectionnés pour leur qualité et adaptés aux besoins des distributeurs et importateurs.",
+        "A selection of quality dairy products designed to meet the needs of distributors, importers and international markets.",
     },
 
     pates: {
-      label: "Pâtes alimentaires",
-      shortLabel: "Pâtes",
+      label: "Pasta",
+      shortLabel: "Pasta",
       description:
-        "Pâtes alimentaires de qualité, adaptées à la distribution et aux marchés internationaux.",
+        "Quality pasta products designed to meet the needs of distributors, wholesalers and international markets.",
     },
 
     riz: {
-      label: "Riz",
-      shortLabel: "Riz",
+      label: "Rice",
+      shortLabel: "Rice",
       description:
-        "Riz sélectionné pour sa qualité et adapté aux besoins des importateurs, grossistes et distributeurs alimentaires.",
+        "A selection of quality rice for importers, distributors and professionals in international food markets.",
     },
 
     frites: {
-      label: "Frites surgelées",
-      shortLabel: "Frites",
+      label: "Frozen French Fries",
+      shortLabel: "Fries",
       description:
-        "Frites de pommes de terre sélectionnées, adaptées aux professionnels de la restauration et aux réseaux de distribution.",
+        "Frozen French fries selected for their quality, texture and consistency, suitable for foodservice and distribution.",
     },
 
     "pommes-de-terre": {
-      label: "Pommes de terre",
-      shortLabel: "Pommes de terre",
+      label: "Potatoes",
+      shortLabel: "Potatoes",
       description:
-        "Pommes de terre sélectionnées pour leur qualité et leur conservation, destinées aux marchés professionnels et internationaux.",
+        "Potatoes selected for their freshness, quality and good transportability.",
     },
 
     poulet: {
-      label: "Poulet",
-      shortLabel: "Poulet",
+      label: "Chicken",
+      shortLabel: "Chicken",
       description:
-        "Produits de volaille sélectionnés selon les besoins des professionnels, distributeurs et marchés d'exportation.",
+        "Chicken products selected according to strict quality, freshness and compliance standards.",
     },
 
     mayonnaise: {
       label: "Mayonnaise",
       shortLabel: "Mayonnaise",
       description:
-        "Mayonnaise destinée aux professionnels de la restauration, aux distributeurs et aux marchés alimentaires internationaux.",
+        "Mayonnaise selected for its quality, texture and taste, suitable for food distribution markets.",
     },
 
     moutarde: {
-      label: "Moutarde",
-      shortLabel: "Moutarde",
+      label: "Mustard",
+      shortLabel: "Mustard",
       description:
-        "Moutarde de qualité adaptée aux professionnels de l'agroalimentaire, aux distributeurs et aux marchés internationaux.",
+        "Mustard selected for its taste and quality, intended for international distributors and importers.",
     },
 
     "produits-alimentaires": {
       label: "Harissa",
-      shortLabel: "Alimentaire",
+      shortLabel: "Food Products",
       description:
-        "Une gamme de produits alimentaires tunisiens sélectionnés pour répondre aux besoins des distributeurs, importateurs, grossistes et professionnels de la restauration.",
+        "A range of Tunisian food products selected to meet the needs of distributors, importers, wholesalers and foodservice professionals.",
     },
 
     jus: {
-      label: "Jus de fruits",
-      shortLabel: "Jus",
+      label: "Fruit Juices",
+      shortLabel: "Juices",
       description:
-        "Une sélection de jus de fruits destinée aux distributeurs, importateurs, grossistes, hôtels, restaurants et professionnels de la grande distribution.",
+        "A selection of fruit juices intended for distributors, importers, wholesalers, hotels, restaurants and large-scale retailers.",
     },
 
     "conserves-mer": {
-      label: "Conserves de la mer",
-      shortLabel: "Conserves de la mer",
+      label: "Canned Seafood",
+      shortLabel: "Canned Seafood",
       description:
-        "Une sélection de produits de la mer conditionnés pour la distribution, les grossistes, la restauration et les marchés internationaux.",
+        "A selection of seafood products packed for distribution, wholesalers, foodservice and international markets.",
     },
 
     hygiene: {
-      label: "Produits d'hygiène",
-      shortLabel: "Hygiène",
+      label: "Hygiene Products",
+      shortLabel: "Hygiene",
       description:
-        "Une sélection de produits d'hygiène destinée aux distributeurs, grossistes, enseignes de la grande distribution et marchés internationaux.",
+        "A selection of hygiene products intended for distributors, wholesalers, retailers and international markets.",
     },
 
     "fournitures-bureau": {
-      label: "Fournitures de bureau et scolaires",
-      shortLabel: "Bureau & Scolaire",
+      label: "Office & School Supplies",
+      shortLabel: "Office & School",
       description:
-        "Une gamme de fournitures scolaires et de bureau destinée aux distributeurs, librairies, grossistes, entreprises et marchés internationaux.",
+        "A range of school and office supplies intended for distributors, bookstores, wholesalers, companies and international markets.",
     },
 
     materiaux: {
-      label: "Matériaux de construction",
+      label: "Construction Materials",
       shortLabel: "Construction",
       description:
-        "Une sélection de matériaux et produits destinés au secteur de la construction, aux distributeurs, négociants, entreprises et marchés internationaux.",
+        "A selection of materials and products for the construction sector, distributors, traders, contractors and international markets.",
     },
   },
 
   items: {
-    "dattes-deglet-nour": {
-      name: "Dattes Deglet Nour",
+    dattes: {
+      name: "Deglet Nour Dates",
       description:
-        "Dattes tunisiennes Deglet Nour de qualité premium, calibrées et triées avec soin. Leur goût miellé caractéristique et leur conservation naturelle sont particulièrement recherchés par les importateurs et distributeurs.",
+        "Premium Tunisian Deglet Nour dates, carefully graded and sorted. Their characteristic honey-like taste and natural shelf life are particularly appreciated by importers and distributors in international markets, especially during festive periods.",
     },
 
     "huile-olive-extra-vierge": {
-      name: "Huile d'olive extra vierge",
+      name: "Extra Virgin Olive Oil",
       description:
-        "Huile d'olive extra vierge tunisienne, extraite à froid pour préserver ses qualités aromatiques et nutritionnelles. Elle se distingue par son goût fruité, sa faible acidité et sa légère sensation poivrée.",
+        "Tunisian extra virgin olive oil, cold-pressed to preserve all its aromatic and nutritional qualities. It is distinguished by its fruity taste, low acidity and subtle peppery sensation, typical of the finest Tunisian olive-growing regions.",
     },
 
     "tomates-tunisiennes": {
-      name: "Tomates tunisiennes",
+      name: "Tunisian Tomatoes",
       description:
-        "Tomates tunisiennes sélectionnées pour leur fraîcheur, leur couleur homogène et leur bonne tenue au transport. Elles conviennent aussi bien à la vente en frais qu'à la transformation industrielle.",
+        "Tunisian tomatoes grown under optimal conditions and selected for their freshness, uniform color and excellent transportability. They meet international quality requirements and are suitable for both fresh produce sales and industrial processing.",
     },
 
     "biscuits-tunisiens": {
       name: "Biscuits",
       description:
-        "Une sélection de biscuits tunisiens fabriqués selon des standards de qualité rigoureux, disponibles en plusieurs références et formats de conditionnement.",
+        "A selection of biscuits manufactured according to rigorous quality standards, available in several varieties and packaging formats. Suitable for distributors, wholesalers and retailers looking for reliable products.",
     },
 
     chocolat: {
-      name: "Chocolat",
+      name: "Chocolate",
       description:
-        "Produits chocolatés sélectionnés pour leur qualité constante et leur bon rapport qualité-prix, disponibles dans différents formats.",
+        "Chocolate products selected for their consistent quality and good value for money, available in different formats. A range designed for distributors, wholesalers and international markets.",
     },
 
     fromage: {
-      name: "Fromages",
+      name: "Cheese",
       description:
-        "Une sélection de produits fromagers choisis pour leur qualité et leur régularité, adaptée aux besoins de la restauration, de la distribution et de l'export.",
+        "A carefully selected range of cheese and dairy products chosen for their quality, taste and consistent standards. Available in different formats and packaging options, our products are suitable for distributors, wholesalers, hotels, restaurants and food service professionals. This range is designed to meet the requirements of international markets and provide reliable solutions for professional food distribution.",
     },
 
     lait: {
-      name: "Produits laitiers",
+      name: "Dairy Products",
       description:
-        "Gamme de produits laitiers sélectionnés pour leur qualité et leur stabilité de conservation, adaptée aux marchés professionnels et à la distribution à grande échelle.",
+        "A range of dairy products including UHT milk and milk powder, carefully selected for their quality, consistency and good shelf stability. These products are suitable for distributors, wholesalers, importers, hotels, restaurants and food industry professionals. Different formats and packaging options can be offered according to order volumes, logistical requirements and the specific needs of international markets.",
     },
 
     "pates-alimentaires": {
-      name: "Pâtes alimentaires",
+      name: "Pasta",
       description:
-        "Pâtes alimentaires fabriquées à partir de semoule de qualité, disponibles dans plusieurs formats et grammages, avec des options de conditionnement adaptées à l'export.",
+        "A range of pasta products made from quality semolina, carefully selected for their consistency, excellent cooking performance and reliable quality. Available in different shapes, formats and packaging options, the range is suitable for distributors, wholesalers, importers, hotels, restaurants and food industry professionals. Packaging solutions can be adapted according to order volumes and the specific requirements of international markets.",
     },
 
     riz: {
-      name: "Riz",
+      name: "Rice",
       description:
-        "Riz sélectionné pour sa qualité constante et sa bonne tenue à la cuisson, disponible en plusieurs variétés et conditionnements.",
+        "Carefully selected rice known for its quality, consistency and excellent cooking performance. Available in different varieties and packaging options, it is suitable for importers, distributors, wholesalers, food service professionals and food industry operators. A reliable solution for bulk supply and the requirements of international markets.",
     },
 
     "frites-surgelees": {
-      name: "Frites surgelées",
+      name: "Frozen French Fries",
       description:
-        "Frites de pommes de terre surgelées, prêtes à cuire, sélectionnées pour leur texture et leur régularité de calibrage.",
+        "Frozen, ready-to-cook French fries selected for their texture and consistent sizing.",
     },
 
     "pommes-de-terre": {
-      name: "Pommes de terre",
+      name: "Potatoes",
       description:
-        "Pommes de terre sélectionnées pour leur calibre homogène et leur bonne aptitude à la conservation longue durée.",
+        "Potatoes selected for their uniform size and good long-term storage properties.",
     },
 
     poulet: {
-      name: "Poulet",
+      name: "Chicken",
       description:
-        "Produits de volaille contrôlés et calibrés selon les standards de qualité attendus par les professionnels.",
+        "Chicken products inspected and graded according to quality standards expected by professional buyers.",
     },
 
     mayonnaise: {
       name: "Mayonnaise",
       description:
-        "Mayonnaise et sauces d'accompagnement fabriquées selon des recettes constantes, disponibles en différents formats professionnels.",
+        "Mayonnaise and accompanying sauces manufactured according to consistent recipes and available in various professional formats.",
     },
 
     moutarde: {
-      name: "Moutarde",
+      name: "Mustard",
       description:
-        "Moutarde et condiments sélectionnés pour leur régularité gustative, proposés dans des conditionnements adaptés aux professionnels.",
+        "Mustard and condiments selected for consistent taste and offered in packaging formats suitable for foodservice professionals.",
     },
 
     harissa: {
-      name: "Harissa tunisienne",
+      name: "Tunisian Harissa",
       description:
-        "Harissa tunisienne préparée à partir de piments soigneusement sélectionnés, offrant un goût authentique et un profil épicé apprécié dans la cuisine tunisienne et internationale.",
+        "Tunisian harissa made from carefully selected peppers, offering an authentic taste and a spicy profile appreciated in Tunisian and international cuisine.",
     },
 
     "jus-de-fruits": {
-      name: "Jus et Boissons",
+      name: "Juices & Beverages",
       description:
-        "Une gamme de jus de fruits sélectionnés pour leur qualité, leur goût et leur fraîcheur, disponibles en différents parfums et formats.",
+        "A range of fruit juices selected for their quality, taste and freshness, available in various flavors and formats.",
     },
 
     sardines: {
-      name: "Sardines en conserve",
+      name: "Canned Sardines",
       description:
-        "Sardines tunisiennes soigneusement sélectionnées et conditionnées pour préserver leur fraîcheur, leur goût et leurs qualités nutritionnelles.",
+        "Carefully selected Tunisian sardines packed to preserve their freshness, taste and nutritional qualities.",
     },
 
     thon: {
-      name: "Thon en conserve",
+      name: "Canned Tuna",
       description:
-        "Thon de qualité sélectionné et conditionné avec soin afin de préserver sa texture, sa saveur et ses qualités naturelles.",
+        "Quality tuna carefully selected and packed to preserve its texture, flavor and natural qualities.",
     },
 
     "papier-hygienique": {
-      name: "Papier hygiénique",
+      name: "Toilet Paper",
       description:
-        "Produits en papier destinés à l'hygiène quotidienne et aux besoins professionnels, avec différents formats et conditionnements.",
+        "Paper products intended for daily hygiene and professional needs, available in different formats and packaging options.",
     },
 
     "Produits de nettoyage": {
-      name: "Produits de nettoyage",
+      name: "Cleaning Products",
       description:
-        "Une gamme de produits de nettoyage et d'entretien destinée aux particuliers et aux professionnels.",
+        "A range of cleaning and maintenance products intended for households and professional users.",
     },
 
     "couches-bebe": {
-      name: "Couches bébé",
+      name: "Baby Diapers",
       description:
-        "Une gamme de couches bébé conçues pour offrir confort, douceur et protection au quotidien.",
+        "A range of baby diapers designed to provide comfort, softness and everyday protection.",
     },
 
     cahiers: {
-      name: "Cahiers et blocs-notes",
+      name: "Notebooks & Writing Pads",
       description:
-        "Une sélection de cahiers, blocs-notes et articles en papier adaptés aux besoins scolaires, professionnels et administratifs.",
+        "A selection of notebooks, writing pads and paper products suitable for school, professional and administrative needs.",
     },
 
     stylos: {
-      name: "Stylos et instruments d'écriture",
+      name: "Pens & Writing Instruments",
       description:
-        "Une gamme d'instruments d'écriture comprenant stylos à bille, stylos gel et différents modèles destinés à l'usage scolaire et professionnel.",
+        "A range of writing instruments including ballpoint pens, gel pens and various models for school and professional use.",
     },
 
     feutres: {
-      name: "Feutres et marqueurs",
+      name: "Markers & Felt-tip Pens",
       description:
-        "Feutres, marqueurs et instruments de coloriage destinés aux écoles, bureaux et distributeurs.",
+        "Markers, felt-tip pens and coloring instruments intended for schools, offices and distributors.",
     },
 
     "fournitures-scolaires": {
-      name: "Fournitures scolaires",
+      name: "School Supplies",
       description:
-        "Une sélection d'articles scolaires comprenant accessoires d'écriture, classement, dessin et organisation.",
+        "A selection of school supplies including writing, filing, drawing and organization accessories.",
     },
 
     carrelage: {
-      name: "Carrelage",
+      name: "Tiles",
       description:
-        "Une sélection de carrelages destinés aux projets résidentiels, commerciaux et professionnels.",
+        "A selection of tiles intended for residential, commercial and professional projects.",
     },
 
     outillage: {
-      name: "Outillage",
+      name: "Tools",
       description:
-        "Une sélection d'outils et d'équipements destinés aux professionnels et aux particuliers pour les travaux de construction, rénovation et maintenance.",
+        "A selection of tools and equipment for professionals and individuals involved in construction, renovation and maintenance.",
     },
 
     ceramic: {
-      name: "Céramique",
+      name: "Ceramics",
       description:
-        "Une gamme d'accessoires destinés aux travaux de construction et de rénovation, sélectionnés pour répondre aux besoins des professionnels.",
+        "A range of accessories for construction and renovation, selected to meet the needs of professionals.",
     },
   },
 
-  search: "Rechercher un produit...",
-  clear: "Effacer la recherche",
-  all: "Tous",
-  product: "produit",
-  products: "produits",
-  noResults: "Aucun produit trouvé",
-  noResultsDescription:
-    "Aucun produit ne correspond à votre recherche.",
-  reset: "Réinitialiser la recherche",
-  readMore: "Lire la suite",
-  readLess: "Lire moins",
-  quote: "Demander un devis",
+  search: "Search for a product...",
+  clear: "Clear search",
+  all: "All",
+  product: "product",
+  products: "products",
+  noResults: "No products found",
+  noResultsDescription: "No product matches your search.",
+  reset: "Reset search",
+  readMore: "Read more",
+  readLess: "Read less",
+  requestQuote: "Request a quote",
 },
   },
 } as const;

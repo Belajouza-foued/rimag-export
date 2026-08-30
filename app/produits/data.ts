@@ -22,63 +22,69 @@ export const categories: Category[] = [
   // =====================================================
   // 1. DATTES
   // =====================================================
-  {
-    id: "dattes",
-    label: "Dattes tunisiennes",
-    shortLabel: "Dattes",
-    description:
-      "Dattes tunisiennes Deglet Nour, sélectionnées avec soin pour leur qualité, leur goût et leur aptitude à l'exportation.",
-    icon: "bi bi-flower1",
-    products: [
-      {
-        id: "dattes-deglet-nour",
-        name: "Dattes Deglet Nour",
-        description:
-          "Dattes tunisiennes Deglet Nour de qualité premium, calibrées et triées avec soin.son goût miellé caractéristique et sa conservation naturelle, particulièrement recherché par les importateurs et distributeurs sur les marchés internationaux, notamment en période de fêtes.",
-        image: "/images/date-1.jpg",
-           logo: "/images/datte-2.avif", 
-      },
-    ],
-  },
+ {
+  id: "dattes",
+
+  label: "products.categories.dattes.label",
+  shortLabel: "products.categories.dattes.shortLabel",
+  description: 
+  "Dattes tunisiennes de qualité, soigneusement sélectionnées pour répondre aux exigences des marchés internationaux.",
+
+  icon: "bi bi-flower1",
+
+  products: [
+    {
+      id: "dattes-deglet-nour",
+
+      name: "products.items.dattes.name",
+
+      description:
+        "products.items.dattes.description",
+
+      image: "/images/date-1.jpg",
+
+      logo: "/images/datte-2.avif",
+    },
+  ],
+},
 
   // =====================================================
   // 2. HUILES D'OLIVE
   // =====================================================
   {
-    id: "huiles",
-    label: "Huiles d'olive",
-    shortLabel: "Huiles",
-    description:
-      "Huile d'olive tunisienne extra vierge, issue d'olives soigneusement sélectionnées et destinée aux marchés internationaux.",
-    icon: "bi bi-droplet",
-    products: [
-      {
-        id: "huile-olive-extra-vierge",
-        name: "Huile d'olive extra vierge",
-        description:
-          "Huile d'olive extra vierge tunisienne, extraite à froid pour préserver toutes ses qualités aromatiques et nutritionnelles. Elle se distingue par son goût fruité, sa faible acidité et une légère sensation poivrée en bouche, typique des meilleurs terroirs oléicoles tunisiens. Un produit naturellement apprécié pour ses qualités gustatives et nutritionnelles, qui répond aux exigences des distributeurs, importateurs, grossistes et professionnels de la restauration à la recherche d'un produit tunisien premium destiné aux marchés internationaux.",
-        image: "/images/extra-2.avif",
-           logo: "/images/huile-extra.webp", 
-      },
-    ],
-  },
+  id: "huiles",
+  label: "products.categories.huiles.label",
+  shortLabel: "products.categories.huiles.shortLabel",
+  description: "",
+  icon: "bi bi-droplet",
+
+  products: [
+    {
+      id: "huile-olive-extra-vierge",
+      name: "products.items.huile-olive-extra-vierge.name",
+      description: "products.items.huile-olive-extra-vierge.description",
+      image: "/images/extra-2.avif",
+      logo: "/images/huile-extra.webp",
+    },
+  ],
+},
 
   // =====================================================
   // 3. TOMATES
   // =====================================================
   {
     id: "tomates",
-    label: "Tomates",
-    shortLabel: "Tomates",
+    label: "products.categories.tomates.label",
+    shortLabel: "products.categories.tomates.shortLabel",
     icon: "bi bi-circle-fill",
     description:
-      "Tomates tunisiennes sélectionnées pour leur fraîcheur et leur qualité, adaptées aux besoins des importateurs et distributeurs.",
+      "products.categories.tomates.description",
     products: [
       {
         id: "tomates-tunisiennes",
-        name: "Tomates tunisiennes",
+        name: "products.items.tomates-tunisiennes.name",
         description:
-          "Tomates tunisiennes cultivées dans des conditions optimales, sélectionnées pour leur fraîcheur, leur couleur homogène et leur bonne tenue au transport. Elles répondent aux exigences de qualité des marchés internationaux et conviennent aussi bien à la vente en frais qu'à la transformation industrielle.",
+          "products.items.tomates-tunisiennes.description",
         image: "/images/tomate.jpg",
            logo: "/images/tomate-1.avif", 
       },
@@ -90,17 +96,17 @@ export const categories: Category[] = [
   // =====================================================
   {
     id: "biscuits",
-    label: "Biscuits",
-    shortLabel: "Biscuits",
+    label: "products.categories.biscuits.label",
+    shortLabel: "products.categories.biscuits.shortLabel",
     description:
-      "Biscuits de qualité adaptés aux marchés internationaux, avec différentes références destinées aux distributeurs et grossistes.",
+      "products.categories.biscuits.description",
     icon: "bi bi-cookie",
     products: [
       {
         id: "biscuits-tunisiens",
-        name: "Biscuits",
+        name: "products.items.biscuits-tunisiens.name",
         description:
-          "Une sélection de biscuits tunisiens fabriqués selon des standards de qualité rigoureux, disponibles en plusieurs références et formats de conditionnement. Adaptés aux réseaux de distribution, grossistes et enseignes à la recherche de produits fiables pour leurs rayons.",
+          "products.items.biscuits-tunisiens.description",
         image: "/images/biscuit-1.avif",
            logo: "/images/biscuit-2.avif", 
         
@@ -111,41 +117,40 @@ export const categories: Category[] = [
   // =====================================================
   // 6. CHOCOLAT
   // =====================================================
-  {
-    id: "chocolat",
-    label: "Chocolat",
-    shortLabel: "Chocolat",
-    description:
-      "Une sélection de produits chocolatés de qualité, adaptée aux besoins des distributeurs et aux marchés internationaux.",
-    icon: "bi bi-heart",
-    products: [
-      {
-        id: "chocolat",
-        name: "Chocolat",
-        description:
-          "Produits chocolatés sélectionnés pour leur qualité constante et leur bon rapport qualité-prix, disponibles dans différents formats. Une gamme pensée pour répondre aux besoins de distribution en volume tout en garantissant une expérience gustative appréciée des consommateurs finaux.",
-        image: "/images/chocolat.png",
-           logo: "/images/chocolat-1.avif", 
-      },
-    ],
-  },
+{
+  id: "chocolat",
+  label: "products.categories.chocolat.label",
+  shortLabel: "products.categories.chocolat.shortLabel",
+  description: "products.categories.chocolat.description",
+  icon: "bi bi-heart",
+
+  products: [
+    {
+      id: "chocolat",
+      name: "products.items.chocolat.name",
+      description: "products.items.chocolat.description",
+      image: "/images/chocolat.png",
+      logo: "/images/chocolat-1.avif",
+    },
+  ],
+},
 
   // =====================================================
   // 7. FROMAGES
   // =====================================================
   {
     id: "fromage",
-    label: "Fromages",
-    shortLabel: "Fromages",
+    label: "products.categories.fromage.label",
+    shortLabel: "products.categories.fromage.shortLabel",
     description:
-      "Sélection de fromages et produits fromagers destinée aux professionnels, distributeurs et marchés internationaux.",
+      "products.categories.fromage.description",
     icon: "bi bi-hexagon",
     products: [
       {
         id: "fromage",
-        name: "Fromages",
+        name: "products.items.fromage.name",
         description:
-          "Une sélection de produits fromagers choisis pour leur qualité et leur régularité, adaptée aux besoins de la restauration, de la distribution et de l'export. Conditionnements variés disponibles selon les volumes recherchés par nos partenaires professionnels.",
+          "products.items.fromage.description",
         image: "/images/fromage-3.avif",
            logo: "/images/fromage-1.avif", 
       },
@@ -155,68 +160,65 @@ export const categories: Category[] = [
   // =====================================================
   // 8. LAIT
   // =====================================================
-  {
-    id: "lait",
-    label: "Produits laitiers",
-    shortLabel: "Lait",
-    description:
-      "Produits laitiers sélectionnés pour leur qualité et adaptés aux besoins des distributeurs et importateurs.",
-    icon: "bi bi-cup-straw",
-    products: [
-      {
-        id: "lait",
-        name: "Produits laitiers",
-        description:
-          "Gamme de produits laitiers (lait UHT, poudre de lait) sélectionnés pour leur qualité et leur stabilité de conservation. Une offre pensée pour répondre aux exigences logistiques des marchés professionnels et de la distribution à grande échelle.",
-        image: "/images/lait.jpg",
-         logo: "/images/lait-1.avif", // ← nouveau, optionnel,
-      },
-    ],
-  },
+ {
+  id: "lait",
+  label: "products.categories.lait.label",
+  shortLabel: "products.categories.lait.shortLabel",
+  description: "products.categories.lait.description",
+  icon: "bi bi-cup-straw",
+
+  products: [
+    {
+      id: "lait",
+      name: "products.items.lait.name",
+      description: "products.items.lait.description",
+      image: "/images/lait.jpg",
+      logo: "/images/lait-1.avif",
+    },
+  ],
+},
 
   // =====================================================
   // 9. PÂTES
   // =====================================================
   {
-    id: "pates",
-    label: "Pâtes alimentaires",
-    shortLabel: "Pâtes",
-    description:
-      "Pâtes alimentaires de qualité, adaptées à la distribution et aux marchés internationaux avec différentes possibilités de conditionnement.",
-    icon: "bi bi-egg",
-    products: [
-      {
-        id: "pates-alimentaires",
-        name: "Pâtes alimentaires",
-        description:
-          "Pâtes alimentaires fabriquées à partir de semoule de qualité, disponibles dans plusieurs formats et grammages. Un produit de base incontournable pour les distributeurs et grossistes, avec des options de conditionnement adaptées à l'export.",
-        image: "/images/spaguetti-1.avif",
-         logo: "/images/spaguetti.jpg",  // ← nouveau, optionnel
-      },
-    ],
-  },
+  id: "pates",
+  label: "products.categories.pates.label",
+  shortLabel: "products.categories.pates.shortLabel",
+  description: "products.categories.pates.description",
+  icon: "bi bi-egg",
+
+  products: [
+    {
+      id: "pates-alimentaires",
+      name: "products.items.pates-alimentaires.name",
+      description: "products.items.pates-alimentaires.description",
+      image: "/images/spaguetti-1.avif",
+      logo: "/images/spaguetti.jpg",
+    },
+  ],
+},
 
   // =====================================================
   // 10. RIZ
   // =====================================================
   {
-    id: "riz",
-    label: "Riz",
-    shortLabel: "Riz",
-    description:
-      "Riz sélectionné pour sa qualité et adapté aux besoins des importateurs, grossistes et distributeurs alimentaires.",
-    icon: "bi bi-basket",
-    products: [
-      {
-        id: "riz",
-        name: "Riz",
-        description:
-          "Riz sélectionné pour sa qualité constante et sa bonne tenue à la cuisson, disponible en plusieurs variétés et conditionnements. Une référence fiable pour les importateurs, grossistes et distributeurs alimentaires recherchant un approvisionnement régulier.",
-        image: "/images/riz-1.avif",
-           logo: "/images/riz-4.avif", 
-      },
-    ],
-  },
+  id: "riz",
+  label: "products.categories.riz.label",
+  shortLabel: "products.categories.riz.shortLabel",
+  description: "products.categories.riz.description",
+  icon: "bi bi-basket",
+
+  products: [
+    {
+      id: "riz",
+      name: "products.items.riz.name",
+      description: "products.items.riz.description",
+      image: "/images/riz-1.avif",
+      logo: "/images/riz-4.avif",
+    },
+  ],
+},
 
   // =====================================================
   // 11. FRITES
