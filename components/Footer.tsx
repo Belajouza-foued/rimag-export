@@ -163,15 +163,13 @@ export default function Footer() {
 
             <ul>
 
-              {featuredCategories.map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    href={`/produits#${cat.id}`}
-                  >
-                    {cat.shortLabel}
-                  </Link>
-                </li>
-              ))}
+             {featuredCategories.map((cat) => (
+  <li key={cat.id}>
+    <Link href={`/produits#${cat.id}`}>
+      {t(cat.shortLabel)}
+    </Link>
+  </li>
+))}
 
               <li>
                 <Link

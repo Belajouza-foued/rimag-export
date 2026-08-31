@@ -245,7 +245,7 @@ export default function Header() {
             <div className="top-bar__right">
 
               <a href="#" aria-label="Facebook">
-                <i className="bi bi-facebook"></i>
+                <i className="bi bi-facebook header-facebook"></i>
               </a>
 
               <a href="#" aria-label="Instagram">
@@ -275,31 +275,34 @@ export default function Header() {
               LOGO
           ================================================= */}
 
-          <Link
-            href="/"
-            className="brand"
-            onClick={closeMenu}
-          >
-            <div className="brand__logo">
-              <Image
-                src="/images/rimag.png"
-                alt="Exporia"
-                width={80}
-                height={80}
-                priority
-              />
-            </div>
+          {/* =================================================
+    LOGO RIMAG EXPORT
+================================================= */}
 
-            <div className="brand__name">
-              <span className="brand__food">
-                Import
-              </span>
+<Link
+  href="/"
+  className="brand"
+  onClick={closeMenu}
+  aria-label="RIMAG Export"
+>
+  <div className="brand__name">
 
-              <span className="brand__nordo">
-                Export
-              </span>
-            </div>
-          </Link>
+    <span className="brand__icon">
+      <i className="bi bi-globe2"></i>
+    </span>
+
+    <span className="brand__text">
+      <span className="brand__rimag">
+        RIMAG
+      </span>
+
+      <span className="brand__export">
+        EXPORT
+      </span>
+    </span>
+
+  </div>
+</Link>
 
           {/* =================================================
               MOBILE BUTTON

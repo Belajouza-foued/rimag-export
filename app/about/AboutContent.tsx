@@ -1,363 +1,161 @@
 "use client";
 
 import Link from "next/link";
-import AboutFaq from "./AboutFaq";
-
-import {
-  useLanguage,
-  type TranslationKey,
-} from "@/contexts/LanguageContext";
-
+import { useLanguage } from "@/contexts/LanguageContext";
 import styles from "./about.module.css";
 
-const timelineItems: {
-  icon: string;
-  yearKey: TranslationKey;
-  titleKey: TranslationKey;
-  textKey: TranslationKey;
-}[] = [
-  {
-    icon: "bi bi-flag",
-    yearKey: "timelineYearStart",
-    titleKey: "timelineTitleStart",
-    textKey: "timelineTextStart",
-  },
-  {
-    icon: "bi bi-globe2",
-    yearKey: "timelineYearExpansion",
-    titleKey: "timelineTitleExpansion",
-    textKey: "timelineTextExpansion",
-  },
-  {
-    icon: "bi bi-boxes",
-    yearKey: "timelineYearDiversification",
-    titleKey: "timelineTitleDiversification",
-    textKey: "timelineTextDiversification",
-  },
-  {
-    icon: "bi bi-graph-up-arrow",
-    yearKey: "timelineYearToday",
-    titleKey: "timelineTitleToday",
-    textKey: "timelineTextToday",
-  },
-];
-
-export default function AboutContent() {
+export default function AboutStory() {
   const { t } = useLanguage();
 
   return (
-    <>
-      {/* =====================================================
-          HERO
-      ===================================================== */}
+    <section className={styles.aboutStory}>
+      <div className="container">
+        <div className={styles.aboutStoryGrid}>
 
-      <section className={styles.aboutHero}>
-        <div className="container">
-          <div className={styles.aboutHeroContent}>
-            <span className={styles.aboutHeroEyebrow}>
-              <i className="bi bi-building"></i>
-              {t("aboutHeroEyebrow")}
-            </span>
+          {/* =================================================
+              IMAGES
+          ================================================= */}
 
-            <h1>
-              {t("aboutHeroTitle")}
-              <span>Exporia</span>
-            </h1>
+          <div className={styles.aboutStoryImages}>
 
-            <p>
-              {t("aboutHeroText")}
-            </p>
+            {/* IMAGE PRINCIPALE AVEC HOVER */}
 
-            <div className={styles.aboutBreadcrumb}>
-              <Link href="/">
-                {t("navHome")}
-              </Link>
+            <div className={styles.imgHover}>
 
-              <span>/</span>
-
-              <span>
-                {t("navAbout")}
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          STORY
-      ===================================================== */}
-
-      <section className={styles.aboutStory}>
-        <div className="container">
-          <div className={styles.aboutStoryGrid}>
-
-            {/* IMAGES */}
-
-            <div className={styles.aboutStoryImages}>
-
+              {/* IMAGE PRINCIPALE */}
               <img
                 src="/images/export.jpg"
                 alt={t("aboutStoryImage1")}
-                className={`${styles.imgTall} ${styles.revealLeft}`}
+                className={styles.imgHoverBase}
               />
 
-              <div className={styles.imgStack}>
-
-                <img
-                  src="/images/maritime.avif"
-                  alt={t("aboutStoryImage2")}
-                  className={`${styles.imgShort} ${styles.revealRight}`}
-                />
-
-                <img
-                  src="/images/logistic.jpg"
-                  alt={t("aboutStoryImage3")}
-                  className={`${styles.imgShort} ${styles.revealRight}`}
-                />
-
-              </div>
-
-              <div className={styles.aboutStoryBadge}>
-                <strong>15+</strong>
-
-                <span>
-                  {t("aboutExperience")}
-                </span>
-              </div>
+              {/* IMAGE AU HOVER */}
+              <img
+                src="/images/maritime.avif"
+                alt={t("aboutStoryImage2")}
+                className={styles.imgHoverSecond}
+              />
 
             </div>
 
-            {/* CONTENU */}
+            {/* =================================================
+                IMAGES SECONDAIRES
+            ================================================= */}
 
-            <div className={styles.aboutStoryContent}>
+            <div className={styles.imgStack}>
 
-              <span className={styles.sectionLabel}>
-                {t("aboutStoryLabel")}
+              <img
+                src="/images/maritime.avif"
+                alt={t("aboutStoryImage2")}
+                className={`${styles.imgShort} ${styles.revealRight}`}
+              />
+
+              <img
+                src="/images/logistic.jpg"
+                alt={t("aboutStoryImage3")}
+                className={`${styles.imgShort} ${styles.revealRight}`}
+              />
+
+            </div>
+
+            {/* =================================================
+                BADGE
+            ================================================= */}
+
+            <div className={styles.aboutStoryBadge}>
+
+              <strong>15+</strong>
+
+              <span>
+                {t("aboutExperience")}
               </span>
-
-              <h2>
-                {t("aboutStoryTitle")}
-                <span>
-                  {t("aboutStoryAccent")}
-                </span>
-              </h2>
-
-              <p>
-                {t("aboutStoryText1")}
-              </p>
-
-              <p>
-                {t("aboutStoryText2")}
-              </p>
-
-              <ul className={styles.aboutStoryList}>
-
-                <li>
-                  <i className="bi bi-check-circle-fill"></i>
-                  {t("aboutStoryPoint1")}
-                </li>
-
-                <li>
-                  <i className="bi bi-check-circle-fill"></i>
-                  {t("aboutStoryPoint2")}
-                </li>
-
-                <li>
-                  <i className="bi bi-check-circle-fill"></i>
-                  {t("aboutStoryPoint3")}
-                </li>
-
-                <li>
-                  <i className="bi bi-check-circle-fill"></i>
-                  {t("aboutStoryPoint4")}
-                </li>
-
-              </ul>
-
-              <Link
-                href="/contact"
-                className={styles.btnPrimaryCustom}
-              >
-                {t("aboutStoryButton")}
-
-                <i className="bi bi-arrow-right"></i>
-              </Link>
 
             </div>
 
           </div>
-        </div>
-      </section>
 
-      {/* =====================================================
-          VALEURS
-      ===================================================== */}
+          {/* =================================================
+              CONTENU
+          ================================================= */}
 
-      <section className={styles.aboutValues}>
-        <div className="container">
-
-          <div className={styles.sectionHeading}>
+          <div className={styles.aboutStoryContent}>
 
             <span className={styles.sectionLabel}>
-              {t("aboutValuesLabel")}
+              {t("aboutStoryLabel")}
             </span>
 
             <h2>
-              {t("aboutValuesTitle")}
+              {t("aboutStoryTitle")}{" "}
               <span>
-                {t("aboutValuesAccent")}
+                {t("aboutStoryAccent")}
               </span>
             </h2>
 
             <p>
-              {t("aboutValuesSubtitle")}
+              {t("aboutStoryText1")}
             </p>
 
-          </div>
+            <p>
+              {t("aboutStoryText2")}
+            </p>
 
-          <div className={styles.aboutValuesGrid}>
+            {/* =================================================
+                LISTE
+            ================================================= */}
 
-            {/* MISSION */}
+            <ul className={styles.aboutStoryList}>
 
-            <div className={styles.valueCard}>
+              <li>
+                <i className="bi bi-check-circle-fill"></i>
 
-              <div className={styles.valueCardIcon}>
-                <i className="bi bi-bullseye"></i>
-              </div>
+                <span>
+                  {t("aboutStoryPoint1")}
+                </span>
+              </li>
 
-              <h3>
-                {t("aboutMissionTitle")}
-              </h3>
+              <li>
+                <i className="bi bi-check-circle-fill"></i>
 
-              <p>
-                {t("aboutMissionText")}
-              </p>
+                <span>
+                  {t("aboutStoryPoint2")}
+                </span>
+              </li>
 
-            </div>
+              <li>
+                <i className="bi bi-check-circle-fill"></i>
 
-            {/* VISION */}
+                <span>
+                  {t("aboutStoryPoint3")}
+                </span>
+              </li>
 
-            <div className={styles.valueCard}>
+              <li>
+                <i className="bi bi-check-circle-fill"></i>
 
-              <div className={styles.valueCardIcon}>
-                <i className="bi bi-binoculars"></i>
-              </div>
+                <span>
+                  {t("aboutStoryPoint4")}
+                </span>
+              </li>
 
-              <h3>
-                {t("aboutVisionTitle")}
-              </h3>
+            </ul>
 
-              <p>
-                {t("aboutVisionText")}
-              </p>
+            {/* =================================================
+                BOUTON
+            ================================================= */}
 
-            </div>
+            <Link
+              href="/contact"
+              className={styles.btnPrimaryCustom}
+            >
+              {t("aboutStoryButton")}
 
-            {/* VALEURS */}
-
-            <div className={styles.valueCard}>
-
-              <div className={styles.valueCardIcon}>
-                <i className="bi bi-gem"></i>
-              </div>
-
-              <h3>
-                {t("aboutValuesCardTitle")}
-              </h3>
-
-              <p>
-                {t("aboutValuesCardText")}
-              </p>
-
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          TIMELINE
-      ===================================================== */}
-
-      <section className={styles.aboutTimeline}>
-        <div className="container">
-
-          <div className={styles.sectionHeading}>
-
-            <span className={styles.sectionLabel}>
-              {t("aboutTimelineLabel")}
-            </span>
-
-            <h2>
-              {t("aboutTimelineTitle")}
-              <span>
-                {t("aboutTimelineAccent")}
-              </span>
-            </h2>
-
-          </div>
-
-          <div className={styles.timeline}>
-
-            {timelineItems.map((item) => (
-              <Timeline
-                key={item.yearKey}
-                icon={item.icon}
-                year={t(item.yearKey)}
-                title={t(item.titleKey)}
-                text={t(item.textKey)}
-              />
-            ))}
+              <i className="bi bi-arrow-right"></i>
+            </Link>
 
           </div>
 
         </div>
-      </section>
-
-      {/* =====================================================
-          FAQ
-      ===================================================== */}
-
-      <AboutFaq />
-    </>
-  );
-}
-
-
-/* =========================================================
-   TIMELINE COMPONENT
-========================================================= */
-
-function Timeline({
-  icon,
-  year,
-  title,
-  text,
-}: {
-  icon: string;
-  year: string;
-  title: string;
-  text: string;
-}) {
-  return (
-    <div className={styles.timelineItem}>
-
-      <div className={styles.timelineDot}>
-        <i className={icon}></i>
       </div>
-
-      <span className={styles.timelineYear}>
-        {year}
-      </span>
-
-      <h3>
-        {title}
-      </h3>
-
-      <p>
-        {text}
-      </p>
-
-    </div>
+    </section>
   );
 }

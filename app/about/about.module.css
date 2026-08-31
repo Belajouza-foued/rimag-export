@@ -464,6 +464,7 @@
   grid-template-columns: 1.15fr .85fr;
   gap: 18px;
   min-height: 520px;
+  z-index: 1;
 }
 
 .imgTall {
@@ -472,6 +473,7 @@
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(0,0,0,.12);
+  z-index: 1;
 }
 
 .imgStack {
@@ -487,8 +489,571 @@
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0,0,0,.10);
 }
+/*hover image*/
+/* =====================================================
+   SECTION
+===================================================== */
+
+.aboutStory {
+  padding: 100px 0;
+  background: var(--white);
+}
 
 
+/* =====================================================
+   GRID PRINCIPAL
+===================================================== */
+
+.aboutStoryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+
+/* =====================================================
+   BLOC IMAGES
+===================================================== */
+
+.aboutStoryImages {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 18px;
+
+  min-height: 520px;
+}
+
+
+/* =====================================================
+   IMAGE PRINCIPALE - HOVER
+===================================================== */
+
+/* =====================================================
+   IMAGE HOVER - SMOOTH
+===================================================== */
+
+.imgHover {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+
+/* Les deux images */
+
+.imgHover img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 24px;
+
+  transition:
+    opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 2.5s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.4s ease;
+
+  will-change: opacity, transform;
+}
+
+
+/* =====================================================
+   IMAGE INITIALE
+===================================================== */
+
+.imgHoverBase {
+  opacity: 1;
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+
+/* =====================================================
+   DEUXIÈME IMAGE
+===================================================== */
+
+.imgHoverSecond {
+  opacity: 0;
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.imgHover:hover .imgHoverBase {
+  opacity: 0;
+
+  transform: scale(1.035);
+
+  filter: brightness(1.05);
+}
+
+
+.imgHover:hover .imgHoverSecond {
+  opacity: 1;
+
+  transform: scale(1);
+
+  filter: brightness(1);
+}
+/* =====================================================
+   IMAGES SECONDAIRES
+===================================================== */
+
+.imgStack {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.imgShort {
+  width: 100%;
+  height: 251px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+
+/* Petit effet hover sur les images secondaires */
+
+.imgShort:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   BADGE 15+
+===================================================== */
+
+.aboutStoryBadge {
+  position: absolute;
+
+  left: -25px;
+  bottom: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 125px;
+  height: 125px;
+
+  padding: 15px;
+
+  background: var(--blue);
+
+  color: var(--white);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.18);
+
+  z-index: 20;
+}
+
+
+.aboutStoryBadge strong {
+  font-size: 32px;
+
+  font-weight: 800;
+
+  line-height: 1;
+    z-index: 20;
+}
+
+
+.aboutStoryBadge span {
+  margin-top: 8px;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  text-align: center;
+
+  opacity: 0.95;
+    z-index: 20;
+}
+
+
+/* =====================================================
+   CONTENU
+===================================================== */
+
+.aboutStoryContent {
+  max-width: 600px;
+}
+
+
+.sectionLabel {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: var(--primary);
+}
+
+
+.aboutStoryContent h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  color: var(--dark);
+}
+
+
+.aboutStoryContent h2 span {
+  color: var(--primary);
+}
+
+
+.aboutStoryContent p {
+  margin-bottom: 18px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--text-muted);
+}
+
+
+/* =====================================================
+   LISTE
+===================================================== */
+
+.aboutStoryList {
+  list-style: none;
+
+  margin: 30px 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+.aboutStoryList li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  color: var(--dark);
+}
+
+
+.aboutStoryList li i {
+  flex-shrink: 0;
+
+  margin-top: 3px;
+
+  color: var(--primary);
+
+  font-size: 18px;
+}
+
+
+/* =====================================================
+   BOUTON
+===================================================== */
+
+.btnPrimaryCustom {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 25px;
+
+  border-radius: 10px;
+
+  background: var(--primary);
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.btnPrimaryCustom i {
+  transition: transform 0.3s ease;
+}
+
+
+.btnPrimaryCustom:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.btnPrimaryCustom:hover i {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+  .aboutStory {
+    padding: 80px 0;
+  }
+
+
+  .aboutStoryGrid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+
+  .aboutStoryContent {
+    max-width: 100%;
+  }
+
+
+  .aboutStoryImages {
+    min-height: 500px;
+  }
+
+
+  .imgHover {
+    height: 500px;
+  }
+
+
+  .imgShort {
+    height: 241px;
+  }
+
+
+  .aboutStoryBadge {
+    left: -15px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .aboutStory {
+    padding: 60px 0;
+  }
+
+
+  .aboutStoryGrid {
+    gap: 40px;
+  }
+
+
+  .aboutStoryImages {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    gap: 15px;
+  }
+
+
+  .imgHover {
+    height: 400px;
+
+    border-radius: 20px;
+  }
+
+
+  .imgHover img {
+    border-radius: 20px;
+  }
+
+
+  .imgStack {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+
+  .imgShort {
+    height: 220px;
+
+    border-radius: 18px;
+  }
+
+
+  .aboutStoryBadge {
+    left: 15px;
+
+    bottom: 240px;
+
+    width: 105px;
+    height: 105px;
+  }
+
+
+  .aboutStoryBadge strong {
+    font-size: 27px;
+  }
+
+
+  .aboutStoryBadge span {
+    font-size: 11px;
+  }
+
+
+  .aboutStoryContent h2 {
+    font-size: 32px;
+  }
+
+
+  .aboutStoryContent p {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================================
+   PETIT MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .aboutStory {
+    padding: 50px 0;
+  }
+
+
+  .imgHover {
+    height: 340px;
+
+    border-radius: 18px;
+  }
+
+
+  .imgHover img {
+    border-radius: 18px;
+  }
+
+
+  .imgStack {
+    grid-template-columns: 1fr;
+  }
+
+
+  .imgShort {
+    height: 200px;
+  }
+
+
+  .aboutStoryBadge {
+    position: absolute;
+
+    left: 15px;
+
+    bottom: 420px;
+
+    width: 95px;
+    height: 95px;
+  }
+
+
+  .aboutStoryBadge strong {
+    font-size: 24px;
+  }
+
+
+  .aboutStoryContent h2 {
+    font-size: 28px;
+  }
+
+
+  .aboutStoryList li {
+    font-size: 14px;
+  }
+
+
+  .btnPrimaryCustom {
+    width: 100%;
+
+    justify-content: center;
+  }
+}
 /* =====================================================
    ANIMATIONS
 ===================================================== */

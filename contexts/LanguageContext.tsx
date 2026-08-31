@@ -617,35 +617,41 @@ products: {
       label: "Frites surgelées",
       shortLabel: "Frites",
       description:
-        "Frites surgelées sélectionnées pour leur qualité, leur texture et leur régularité, adaptées à la restauration et à la distribution.",
+        "Frites de pommes de terre surgelées, sélectionnées pour leur qualité et leur régularité, adaptées aux professionnels de la restauration et aux réseaux de distribution.",
     },
 
-    "pommes-de-terre": {
+    "frites-surgelees": {
       label: "Pommes de terre",
       shortLabel: "Pommes de terre",
       description:
         "Pommes de terre sélectionnées pour leur fraîcheur, leur qualité et leur bonne tenue pendant le transport.",
+    },
+       "pommes-de-terre": {
+      label: "pommes de terre ",
+      shortLabel: "Frites",
+      description:
+        "Pommes de terre sélectionnées pour leur qualité, leur calibre et leur bonne conservation, destinées aux marchés professionnels et internationaux.",
     },
 
     poulet: {
       label: "Poulet",
       shortLabel: "Poulet",
       description:
-        "Produits de poulet sélectionnés selon des critères stricts de qualité, de fraîcheur et de conformité.",
+        "Produits de volaille sélectionnés selon les besoins des professionnels, distributeurs et marchés d'exportation.",
     },
 
     mayonnaise: {
       label: "Mayonnaise",
       shortLabel: "Mayonnaise",
       description:
-        "Mayonnaise sélectionnée pour sa qualité, sa texture et son goût, adaptée aux marchés de la distribution alimentaire.",
+        "Mayonnaise destinée aux professionnels de la restauration, aux distributeurs et aux marchés alimentaires internationaux.",
     },
 
     moutarde: {
       label: "Moutarde",
       shortLabel: "Moutarde",
       description:
-        "Moutarde sélectionnée pour son goût et sa qualité, destinée aux distributeurs et importateurs internationaux.",
+        "Moutarde de qualité adaptée aux professionnels de l’agroalimentaire, aux distributeurs et aux marchés internationaux.",
     },
 
     "produits-alimentaires": {
@@ -659,7 +665,7 @@ products: {
       label: "Jus de fruits",
       shortLabel: "Jus",
       description:
-        "Une sélection de jus de fruits destinée aux distributeurs, importateurs, grossistes, hôtels, restaurants et professionnels de la grande distribution.",
+        "Une sélection de jus de fruits destinée aux distributeurs, importateurs, grossistes, hôtels, restaurants et professionnels de la grande distribution. Des produits adaptés aux différents marchés et aux besoins de l’export international.",
     },
 
     "conserves-mer": {
@@ -749,115 +755,115 @@ products: {
     "frites-surgelees": {
       name: "Frites surgelées",
       description:
-        "Frites de pommes de terre surgelées, prêtes à cuire, sélectionnées pour leur texture et leur régularité de calibrage.",
+        "Frites de pommes de terre surgelées, prêtes à cuire, sélectionnées pour leur qualité, leur texture et leur régularité de calibrage. Elles répondent aux besoins des importateurs, grossistes, distributeurs, restaurants et professionnels de la restauration rapide et traditionnelle.",
     },
 
     "pommes-de-terre": {
       name: "Pommes de terre",
       description:
-        "Pommes de terre sélectionnées pour leur calibre homogène et leur bonne aptitude à la conservation longue durée.",
+        "Pommes de terre soigneusement sélectionnées pour leur calibre homogène, leur qualité et leur bonne aptitude à la conservation. Elles répondent aux besoins des importateurs, grossistes, distributeurs, professionnels de la transformation agroalimentaire et marchés internationaux.",
     },
 
     poulet: {
       name: "Poulet",
       description:
-        "Produits de volaille contrôlés et calibrés selon les standards de qualité attendus par les professionnels.",
+        "Produits de volaille, comprenant du poulet entier et différentes découpes, sélectionnés et calibrés selon les standards de qualité attendus par les professionnels. Une offre adaptée aux besoins de la restauration, de la distribution, des grossistes et des marchés internationaux.",
     },
 
     mayonnaise: {
       name: "Mayonnaise",
       description:
-        "Mayonnaise et sauces d'accompagnement fabriquées selon des recettes constantes, disponibles en différents formats professionnels.",
+        "Mayonnaise et sauces d’accompagnement élaborées selon des recettes constantes et adaptées aux exigences des professionnels. Disponibles en différents formats, elles constituent une solution pratique pour la restauration, les grossistes, les distributeurs et les marchés alimentaires internationaux.",
     },
 
     moutarde: {
       name: "Moutarde",
       description:
-        "Moutarde et condiments sélectionnés pour leur régularité gustative, proposés dans des conditionnements adaptés aux professionnels.",
+        "Moutarde et condiments sélectionnés pour leur qualité et leur régularité gustative, proposés dans des conditionnements adaptés aux professionnels de l’agroalimentaire, aux grossistes, aux distributeurs et aux marchés internationaux.",
     },
 
     harissa: {
       name: "Harissa tunisienne",
       description:
-        "Harissa tunisienne préparée à partir de piments soigneusement sélectionnés, offrant un goût authentique et un profil épicé apprécié dans la cuisine tunisienne et internationale.",
+        "Harissa tunisienne préparée à partir de piments soigneusement sélectionnés, offrant un goût authentique, une texture caractéristique et un profil épicé apprécié dans la cuisine tunisienne et internationale. Disponible en différents conditionnements adaptés à la distribution et à l’export.",
     },
 
     "jus-de-fruits": {
       name: "Jus et boissons",
       description:
-        "Une gamme de jus de fruits sélectionnés pour leur qualité, leur goût et leur fraîcheur, disponibles en différents parfums et formats.",
+        "Une gamme de jus de fruits sélectionnés pour leur qualité, leur goût et leur fraîcheur. Disponibles en différents parfums et formats selon les besoins des marchés, ces produits sont adaptés à la grande distribution, aux grossistes, aux hôtels, aux restaurants et aux professionnels de la restauration. Les conditionnements peuvent être adaptés aux exigences des importateurs et aux différents marchés internationaux.",
     },
 
     sardines: {
       name: "Sardines en conserve",
       description:
-        "Sardines tunisiennes soigneusement sélectionnées et conditionnées pour préserver leur fraîcheur, leur goût et leurs qualités nutritionnelles.",
+        "Sardines tunisiennes soigneusement sélectionnées et conditionnées pour préserver leur fraîcheur, leur goût et leurs qualités nutritionnelles. Disponibles dans différents formats et présentations selon les besoins des importateurs, distributeurs et marchés internationaux.",
     },
 
     thon: {
       name: "Thon en conserve",
       description:
-        "Thon de qualité sélectionné et conditionné avec soin afin de préserver sa texture, sa saveur et ses qualités naturelles.",
+        "Thon de qualité sélectionné et conditionné avec soin afin de préserver sa texture, sa saveur et ses qualités naturelles. Une solution adaptée à la grande distribution, aux grossistes, aux professionnels de la restauration et aux marchés d’exportation.",
     },
 
     "papier-hygienique": {
       name: "Papier hygiénique",
       description:
-        "Produits en papier destinés à l'hygiène quotidienne et aux besoins professionnels, avec différents formats et conditionnements.",
+        "Produits en papier destinés à l'hygiène quotidienne et aux besoins professionnels. Différents formats, conditionnements et niveaux de qualité peuvent être proposés pour répondre aux exigences des distributeurs, grossistes, hôtels, restaurants et marchés internationaux.",
     },
 
     "Produits de nettoyage": {
       name: "Produits de nettoyage",
       description:
-        "Une gamme de produits de nettoyage et d'entretien destinée aux particuliers et aux professionnels.",
+        "Une gamme de produits de nettoyage et d'entretien destinée aux particuliers et aux professionnels. Des solutions adaptées à l'entretien des surfaces, des locaux et des espaces professionnels, avec différents formats et conditionnements selon les besoins des distributeurs et importateurs.",
     },
 
     "couches-bebe": {
       name: "Couches bébé",
       description:
-        "Une gamme de couches bébé conçues pour offrir confort, douceur et protection au quotidien.",
+        "Une gamme de couches bébé conçues pour offrir confort, douceur et protection au quotidien. Des produits adaptés aux besoins des distributeurs, grossistes, pharmacies, enseignes de grande distribution et importateurs. Disponibles en différentes tailles et conditionnements selon les exigences des marchés, avec une sélection pensée pour assurer une bonne absorption, un ajustement confortable et une protection adaptée aux besoins des bébés.",
     },
 
     cahiers: {
       name: "Cahiers et blocs-notes",
       description:
-        "Une sélection de cahiers, blocs-notes et articles en papier adaptés aux besoins scolaires, professionnels et administratifs.",
+        "Une sélection de cahiers, blocs-notes et articles en papier adaptés aux besoins scolaires, professionnels et administratifs. Différents formats, nombres de pages et présentations peuvent être proposés selon les exigences des distributeurs et des marchés..",
     },
 
     stylos: {
       name: "Stylos et instruments d'écriture",
       description:
-        "Une gamme d'instruments d'écriture comprenant stylos à bille, stylos gel et différents modèles destinés à l'usage scolaire et professionnel.",
+        "Une gamme d'instruments d'écriture comprenant stylos à bille, stylos gel et différents modèles destinés à l'usage scolaire, administratif et professionnel. Des références adaptées à la distribution en volume et aux besoins des grossistes.",
     },
 
     feutres: {
       name: "Feutres et marqueurs",
       description:
-        "Feutres, marqueurs et instruments de coloriage destinés aux écoles, bureaux et distributeurs.",
+        "Feutres, marqueurs et instruments de coloriage destinés aux écoles, bureaux, commerces spécialisés et distributeurs. Une sélection de références adaptées aux différents usages et aux besoins des marchés professionnels.",
     },
 
     "fournitures-scolaires": {
       name: "Fournitures scolaires",
       description:
-        "Une sélection d'articles scolaires comprenant accessoires d'écriture, classement, dessin et organisation.",
+        "Une sélection d'articles scolaires comprenant accessoires d'écriture, classement, dessin et organisation. Des produits destinés aux librairies, distributeurs, grossistes et enseignes spécialisées.",
     },
 
     carrelage: {
       name: "Carrelage",
       description:
-        "Une sélection de carrelages destinés aux projets résidentiels, commerciaux et professionnels.",
+        "Une sélection de carrelages destinés aux projets résidentiels, commerciaux et professionnels. Différents formats, designs, finitions et usages peuvent être proposés afin de répondre aux besoins des distributeurs, négociants et professionnels du bâtiment.",
     },
 
     outillage: {
       name: "Outillage",
       description:
-        "Une sélection d'outils et d'équipements destinés aux professionnels et aux particuliers pour les travaux de construction, rénovation et maintenance.",
+        "Une sélection d'outils et d'équipements destinés aux professionnels et aux particuliers pour les travaux de construction, de rénovation, de maintenance et d'entretien.",
     },
 
     ceramic: {
       name: "Céramique",
       description:
-        "Une gamme d'accessoires destinés aux travaux de construction et de rénovation, sélectionnés pour répondre aux besoins des professionnels.",
+        "Une gamme de produits et accessoires en céramique destinés aux travaux de construction et de rénovation. Des produits sélectionnés pour répondre aux besoins des professionnels, distributeurs et négociants spécialisés",
     },
   },
 
@@ -1492,63 +1498,69 @@ products: {
       label: "Frozen French Fries",
       shortLabel: "Fries",
       description:
-        "Frozen French fries selected for their quality, texture and consistency, suitable for foodservice and distribution.",
+        "Frozen potato fries selected for their quality and consistency, suitable for foodservice professionals and distribution networks.",
     },
 
-    "pommes-de-terre": {
+    "frites-surgelees": {
       label: "Potatoes",
       shortLabel: "Potatoes",
       description:
         "Potatoes selected for their freshness, quality and good transportability.",
+    },
+      "pommes-de-terre": {
+      label: "Potatoes",
+      shortLabel: "Potatoes",
+      description:
+        "Potatoes selected for their quality, consistent sizing and good storage capacity, suitable for professional and international markets.",
     },
 
     poulet: {
       label: "Chicken",
       shortLabel: "Chicken",
       description:
-        "Chicken products selected according to strict quality, freshness and compliance standards.",
+        "Selected poultry products tailored to the needs of foodservice professionals, distributors and export markets.",
     },
 
     mayonnaise: {
       label: "Mayonnaise",
       shortLabel: "Mayonnaise",
       description:
-        "Mayonnaise selected for its quality, texture and taste, suitable for food distribution markets.",
+        "Mayonnaise designed for foodservice professionals, distributors and international food markets.",
     },
 
     moutarde: {
       label: "Mustard",
       shortLabel: "Mustard",
       description:
-        "Mustard selected for its taste and quality, intended for international distributors and importers.",
+        "Quality mustard suitable for food industry professionals, distributors and international markets.",
     },
 
     "produits-alimentaires": {
       label: "Harissa",
       shortLabel: "Food Products",
       description:
-        "A range of Tunisian food products selected to meet the needs of distributors, importers, wholesalers and foodservice professionals.",
+        "A range of selected Tunisian food products designed to meet the needs of distributors, importers, wholesalers and foodservice professionals.",
     },
 
     jus: {
       label: "Fruit Juices",
       shortLabel: "Juices",
       description:
-        "A selection of fruit juices intended for distributors, importers, wholesalers, hotels, restaurants and large-scale retailers.",
+        "A selection of fruit juices intended for distributors, importers, wholesalers, hotels, restaurants and retail professionals. Products adapted to different markets and international export requirements.",
     },
 
     "conserves-mer": {
       label: "Canned Seafood",
       shortLabel: "Canned Seafood",
       description:
-        "A selection of seafood products packed for distribution, wholesalers, foodservice and international markets.",
+        "A selection of canned seafood products prepared for retail, wholesalers, foodservice professionals and international markets.",
     },
 
     hygiene: {
       label: "Hygiene Products",
       shortLabel: "Hygiene",
       description:
-        "A selection of hygiene products intended for distributors, wholesalers, retailers and international markets.",
+        "A selection of hygiene products intended for distributors, wholesalers, retail chains and international markets.",
     },
 
     "fournitures-bureau": {
@@ -1562,7 +1574,7 @@ products: {
       label: "Construction Materials",
       shortLabel: "Construction",
       description:
-        "A selection of materials and products for the construction sector, distributors, traders, contractors and international markets.",
+        "A selection of materials and products intended for the construction sector, distributors, building suppliers, companies and international markets.",
     },
   },
 
@@ -1624,115 +1636,115 @@ products: {
     "frites-surgelees": {
       name: "Frozen French Fries",
       description:
-        "Frozen, ready-to-cook French fries selected for their texture and consistent sizing.",
+        "Frozen potato fries, ready to cook, carefully selected for their quality, texture and consistent sizing. Suitable for importers, wholesalers, distributors, restaurants and professionals in fast-food and traditional foodservice.",
     },
 
     "pommes-de-terre": {
       name: "Potatoes",
       description:
-        "Potatoes selected for their uniform size and good long-term storage properties.",
+        "Carefully selected potatoes with consistent sizing, quality and good long-term storage capacity. Suitable for importers, wholesalers, distributors, food processing professionals and international markets.",
     },
 
     poulet: {
       name: "Chicken",
       description:
-        "Chicken products inspected and graded according to quality standards expected by professional buyers.",
+        "Poultry products, including whole chicken and various cuts, selected and graded according to the quality standards expected by professionals. A flexible offering suitable for foodservice, distribution, wholesalers and international markets.",
     },
 
     mayonnaise: {
       name: "Mayonnaise",
       description:
-        "Mayonnaise and accompanying sauces manufactured according to consistent recipes and available in various professional formats.",
+        "Mayonnaise and accompanying sauces produced according to consistent recipes and adapted to professional requirements. Available in different formats, they provide a practical solution for foodservice, wholesalers, distributors and international food markets.",
     },
 
     moutarde: {
       name: "Mustard",
       description:
-        "Mustard and condiments selected for consistent taste and offered in packaging formats suitable for foodservice professionals.",
+        "Mustard and selected condiments offering consistent quality and taste, available in packaging formats suitable for food industry professionals, wholesalers, distributors and international markets.",
     },
 
     harissa: {
       name: "Tunisian Harissa",
       description:
-        "Tunisian harissa made from carefully selected peppers, offering an authentic taste and a spicy profile appreciated in Tunisian and international cuisine.",
+        "Tunisian harissa made from carefully selected chili peppers, offering an authentic taste, distinctive texture and a spicy profile appreciated in Tunisian and international cuisine. Available in different packaging formats suitable for distribution and export.",
     },
 
     "jus-de-fruits": {
       name: "Juices & Beverages",
       description:
-        "A range of fruit juices selected for their quality, taste and freshness, available in various flavors and formats.",
+        "A range of fruit juices selected for their quality, taste and freshness. Available in different flavors and formats according to market requirements, these products are suitable for retail, wholesalers, hotels, restaurants and foodservice professionals. Packaging can be adapted to importer requirements and different international markets.",
     },
 
     sardines: {
       name: "Canned Sardines",
       description:
-        "Carefully selected Tunisian sardines packed to preserve their freshness, taste and nutritional qualities.",
+        "Carefully selected Tunisian sardines, packed to preserve their freshness, taste and nutritional qualities. Available in different formats and presentations according to the requirements of importers, distributors and international markets.",
     },
 
     thon: {
       name: "Canned Tuna",
       description:
-        "Quality tuna carefully selected and packed to preserve its texture, flavor and natural qualities.",
+        "Quality tuna carefully selected and packed to preserve its texture, flavor and natural qualities. Suitable for retail, wholesalers, foodservice professionals and export markets.",
     },
 
     "papier-hygienique": {
       name: "Toilet Paper",
       description:
-        "Paper products intended for daily hygiene and professional needs, available in different formats and packaging options.",
+        "Paper products designed for daily hygiene and professional needs. Different formats, packaging options and quality levels can be offered to meet the requirements of distributors, wholesalers, hotels, restaurants and international markets.",
     },
 
     "Produits de nettoyage": {
       name: "Cleaning Products",
       description:
-        "A range of cleaning and maintenance products intended for households and professional users.",
+        "A range of cleaning and maintenance products designed for both households and professionals. Suitable solutions for cleaning surfaces, premises and professional spaces, available in different formats and packaging according to the needs of distributors and importers.",
     },
 
     "couches-bebe": {
       name: "Baby Diapers",
       description:
-        "A range of baby diapers designed to provide comfort, softness and everyday protection.",
+        "A range of baby diapers designed to provide comfort, softness and everyday protection. Suitable for distributors, wholesalers, pharmacies, retail chains and importers. Available in different sizes and packaging options according to market requirements, with a selection designed to provide effective absorption, comfortable fitting and reliable protection for babies.",
     },
 
     cahiers: {
       name: "Notebooks & Writing Pads",
       description:
-        "A selection of notebooks, writing pads and paper products suitable for school, professional and administrative needs.",
+        "A selection of notebooks, notepads and paper products suitable for school, professional and administrative needs. Different formats, page counts and presentations can be offered according to distributor requirements and market needs.",
     },
 
     stylos: {
       name: "Pens & Writing Instruments",
       description:
-        "A range of writing instruments including ballpoint pens, gel pens and various models for school and professional use.",
+        "A range of writing instruments including ballpoint pens, gel pens and various models designed for school, administrative and professional use. References suitable for volume distribution and wholesale requirements.",
     },
 
     feutres: {
       name: "Markers & Felt-tip Pens",
       description:
-        "Markers, felt-tip pens and coloring instruments intended for schools, offices and distributors.",
+        "Felt-tip pens, markers and coloring instruments designed for schools, offices, specialized retailers and distributors. A selection of products suitable for different uses and professional market requirements.",
     },
 
     "fournitures-scolaires": {
       name: "School Supplies",
       description:
-        "A selection of school supplies including writing, filing, drawing and organization accessories.",
+        "A selection of school supplies including writing accessories, filing, drawing and organization products. Designed for bookstores, distributors, wholesalers and specialized retail chains.",
     },
 
     carrelage: {
       name: "Tiles",
       description:
-        "A selection of tiles intended for residential, commercial and professional projects.",
+        "A selection of tiles for residential, commercial and professional projects. Different formats, designs, finishes and applications can be offered to meet the needs of distributors, building suppliers and construction professionals.",
     },
 
     outillage: {
       name: "Tools",
       description:
-        "A selection of tools and equipment for professionals and individuals involved in construction, renovation and maintenance.",
+        "A selection of tools and equipment designed for construction, renovation and maintenance projects. Quality products adapted to the needs of professionals, distributors and specialized building suppliers.",
     },
 
     ceramic: {
       name: "Ceramics",
       description:
-        "A range of accessories for construction and renovation, selected to meet the needs of professionals.",
+        "A range of ceramic products and accessories intended for construction and renovation projects. Selected products designed to meet the needs of professionals, distributors and specialized building suppliers.",
     },
   },
 

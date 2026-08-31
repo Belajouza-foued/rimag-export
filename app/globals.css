@@ -111,7 +111,15 @@ color: var(--white);
     display: flex;
     align-items: center;
     gap: 20px;
-}
+ }
+ .top-bar__right i {
+  color: var(--white);
+    font-size: 17px;
+ }
+  .top-bar__right i:hover {
+  color: var(--yellow);
+    font-size: 17px;
+ }
 
 .top-bar i {
     margin-right: 5px;
@@ -124,7 +132,9 @@ color: var(--white);
 .top-bar__right a:hover {
     color: var(--yellow);
 }
-
+a.header-facebook {
+   
+}
 
 /* =====================================================
    NAVBAR
@@ -136,7 +146,7 @@ color: var(--white);
 
     background: var(--white);
 
-    padding: 14px 0;
+    padding: 20px;
 
     box-shadow: 0 3px 20px rgba(0,0,0,.06);
 }
@@ -149,40 +159,172 @@ color: var(--white);
 
 
 /* BRAND */
+/* =====================================================
+   BRAND / RIMAG EXPORT
+===================================================== */
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: inline-flex;
+  align-items: center;
 
-    flex-shrink: 0;
+  text-decoration: none;
+
+  flex-shrink: 0;
 }
 
-.brand__logo {
-    width: 120px;
-    height: 80px;
-   }
 
-.brand__logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+/* =====================================================
+   LOGO CONTAINER
+===================================================== */
 
 .brand__name {
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: -1px;
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  white-space: nowrap;
 }
 
-.brand__food {
-    color: var(--blue);
+
+/* =====================================================
+   GLOBE
+===================================================== */
+
+.brand__icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 43px;
+
+  flex-shrink: 0;
+
+  border: 2px solid var(--blue);
+
+  border-radius: 50%;
+
+  color: var(--blue);
+
+  font-size: 22px;
+
+  transition:
+    transform 0.45s ease,
+    background-color 0.45s ease,
+    color 0.45s ease,
+    border-color 0.45s ease;
 }
 
-.brand__nordo {
-    color: var(--yellow);
+
+/* Petit point jaune */
+
+.brand__icon::after {
+  content: "";
+
+  position: absolute;
+
+  top: -3px;
+  right: -3px;
+
+  width: 9px;
+  height: 9px;
+
+  background: #f4c400;
+
+  border-radius: 50%;
+
+  border: 2px solid #fff;
+
+  transition:
+    transform 0.45s ease;
 }
 
+
+/* =====================================================
+   TEXTE
+===================================================== */
+
+.brand__text {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   RIMAG
+===================================================== */
+
+.brand__rimag {
+  display: block;
+
+  font-size: 20px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.8px;
+
+  line-height: 1;
+
+  color: var(--blue);
+
+  transition:
+    letter-spacing 0.4s ease;
+}
+
+
+
+/* =====================================================
+   EXPORT
+===================================================== */
+
+.brand__export {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  line-height: 1;
+
+  color: #f4c400;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.brand:hover .brand__icon {
+  transform: rotate(8deg) scale(1.06);
+
+  background: var(--blue);
+
+  border-color: var(--yellow);
+
+  color: #fff;
+}
+
+
+.brand:hover .brand__icon::after {
+  transform: scale(1.25);
+}
+
+
+.brand:hover .brand__rimag {
+  letter-spacing: 2.2px;
+}
 
 /* NAV LINKS */
 

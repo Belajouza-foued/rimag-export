@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import ProduitsClient from "./ProduitsClient";
 import styles from "./produits.module.css";
 import Header from "@/components/Header";
@@ -52,7 +53,7 @@ export default function ProduitsPage() {
           CATALOGUE
       ===================================================== */}
       <ProduitsClient />
-
+<Footer/>
     </main>
   );
 }
