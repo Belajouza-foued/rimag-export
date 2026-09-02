@@ -14,9 +14,13 @@ export async function POST(req: Request) {
       message,
     } = body;
 
+    // Vérification des champs obligatoires
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
-        { message: "Champs obligatoires manquants." },
+        {
+          success: false,
+          message: "Champs obligatoires manquants.",
+        },
         { status: 400 }
       );
     }
@@ -31,20 +35,53 @@ export async function POST(req: Request) {
       },
     });
 
-    // Vérification de la connexion SMTP
+    // Vérification SMTP
     await transporter.verify();
 
-  const info = await transporter.sendMail({
-  from: "contact@rimag.tn",
-  to: "foued.belajouza@gmail.com",
-  subject: "TEST RIMAG - Formulaire",
-  text: "Ceci est un test envoyé depuis le formulaire RIMAG.",
-});
+    const info = await transporter.sendMail({
+      from: `"RIMAG EXPORT" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,
+      replyTo: email,
 
-console.log("EMAIL ENVOYÉ :", info.messageId);
-console.log("RESPONSE SMTP :", info.response);
+      subject: subject
+        ? `RIMAG EXPORT - ${subject}`
+        : "Nouveau message - RIMAG EXPORT",
+
+      text: `
+NOUVEAU MESSAGE DEPUIS LE SITE RIMAG EXPORT
+
+Prénom : ${firstName}
+Nom : ${lastName}
+Email : ${email}
+Téléphone : ${phone || "Non renseigné"}
+Sujet : ${subject || "Non renseigné"}
+
+Message :
+${message}
+      `,
+
+      html: `
+        <h2>Nouveau message depuis le site RIMAG EXPORT</h2>
+
+        <p><strong>Prénom :</strong> ${firstName}</p>
+        <p><strong>Nom :</strong> ${lastName}</p>
+        <p><strong>Email :</strong> ${email}</p>
+        <p><strong>Téléphone :</strong> ${
+          phone || "Non renseigné"
+        }</p>
+        <p><strong>Sujet :</strong> ${
+          subject || "Non renseigné"
+        }</p>
+
+        <hr />
+
+        <h3>Message</h3>
+        <p>${message.replace(/\n/g, "<br />")}</p>
+      `,
+    });
 
     console.log("EMAIL ENVOYÉ :", info.messageId);
+    console.log("RESPONSE SMTP :", info.response);
 
     return NextResponse.json({
       success: true,
