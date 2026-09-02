@@ -62,9 +62,10 @@ export default function Footer() {
                 className={styles.brandLogo}
               />
 
-              <span className={styles.brandName}>
-                Exporia
-              </span>
+             <div className="rio-rimag">
+    <span className="rimag-ri">RI</span>
+    <span className="rimag-mag">MAG</span>
+    </div>
             </Link>
 
             <p className={styles.brandText}>
@@ -223,7 +224,7 @@ export default function Footer() {
                 <i className="bi bi-envelope-fill"></i>
 
                 <a href="mailto:contact@exporia.com">
-                  contact@exporia.com
+                  contact@rimag.tn
                 </a>
               </li>
 
@@ -260,7 +261,7 @@ export default function Footer() {
         <div className={styles.bottom}>
 
           <span>
-            © {new Date().getFullYear()} Exporia.{" "}
+            © {new Date().getFullYear()} RIMAG EXPORT.{" "}
             {t("footerRights")}
           </span>
 

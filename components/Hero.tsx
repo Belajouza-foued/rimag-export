@@ -8,6 +8,30 @@ export default function Hero() {
   const { t } = useLanguage();
 
   const slides = [
+     {
+      image: "/images/export-rimag.avif",
+      alt: "Rimag export for trading",
+      eyebrowIcon: "bi bi-award",
+      eyebrow: t("heroRimag"),
+     title: (
+  <>
+  <div className="riomag">
+    <span className="rimag-yellow">RI</span>
+    <span className="rimag-white">MAG</span></div>
+  </>
+),
+titleAccent: t("heroAccent20"),
+      text: t("heroText20"),
+      actions: (
+        <Link
+          href="/produits"
+          className="btn-primary-custom"
+        >
+          {t("heroViewProducts")}
+          <i className="bi bi-arrow-right"></i>
+        </Link>
+      ),
+    },
     {
       image: "/images/date-1.jpg",
       alt:
@@ -55,7 +79,7 @@ export default function Hero() {
         </Link>
       ),
     },
-
+    
     {
       image: "/images/olives.jpg",
       alt: "Produits alimentaires pour le commerce international",

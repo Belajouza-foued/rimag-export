@@ -44,7 +44,9 @@ heroText1:
   "Exporia accompagne ses partenaires dans l’exportation de produits alimentaires et de grande consommation.",
 heroProducts: "Découvrir nos produits",
 heroContact: "Nous contacter",
-
+heroRimag2: "Rimag Export",
+heroAccent20:"For trading",
+heroText20:"Des produits de qualité sélectionnés pour répondre aux exigences du commerce international et aux besoins de nos partenaires à travers le monde.",
 heroTitle2: "Une sélection pensée",
 heroAccent2: "pour vos marchés",
 heroText2:
@@ -918,7 +920,9 @@ heroText1:
   "Exporia supports its partners in exporting food products and fast-moving consumer goods.",
 heroProducts: "Discover our products",
 heroContact: "Contact us",
-
+heroRimag2: "Rimag Export",
+heroAccent20:"For trading",
+heroText20: "Quality products carefully selected to meet the demands of international trade and the needs of our partners worldwide.",
 heroTitle2: "A carefully selected range",
 heroAccent2: "for your markets",
 heroText2:

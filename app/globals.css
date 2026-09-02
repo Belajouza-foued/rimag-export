@@ -83,7 +83,7 @@ button {
 .top-bar {
     background: var(--blue-dark);
     color: rgba(255,255,255,.9);
-    font-size: 13px;
+       font-size: 15px;
 }
 
 .top-bar__content {
@@ -97,11 +97,9 @@ button {
 }
 .top-bar__left span i {
   color: var(--yellow);
-}
+ }
 
-.globe-hover {
-color: var(--yellow);
-}
+
 .globe-hover:hover {
 color: var(--white);
 }
@@ -562,7 +560,18 @@ text-decoration: none;
 
     flex-wrap: wrap;
 }
+.riomag {
+    display: flex;
+   
+}
+.rimag-yellow {
+  color: #f5c400;
+}
 
+.rimag-white {
+  color: var(--white) !important;
+ 
+}
 
 /* BUTTONS */
 
@@ -1091,7 +1100,17 @@ text-decoration: none;
 /* =====================================================
    FOOTER
 ===================================================== */
-
+.rio-rimag {
+    font-size: 20px !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.rimag-ri {
+    color: var(--white) !important;
+}
+.rimag-mag {
+    color: var(--yellow) !important;
+}
 .footer {
     padding: 65px 0 25px;
 

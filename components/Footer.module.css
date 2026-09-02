@@ -327,3 +327,6 @@
         justify-content: center;
     }
 }
+.rimag-ri {
+    color: var(--white) !important;
+}

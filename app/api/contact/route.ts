@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(request: Request) {
+export async function POST(req: Request) {
   try {
-    const body = await request.json();
+    const body = await req.json();
 
     const {
       firstName,
@@ -16,17 +16,14 @@ export async function POST(request: Request) {
 
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
-        {
-          success: false,
-          message: "Veuillez remplir les champs obligatoires.",
-        },
+        { message: "Champs obligatoires manquants." },
         { status: 400 }
       );
     }
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 465),
+      port: Number(process.env.SMTP_PORT),
       secure: true,
       auth: {
         user: process.env.SMTP_USER,
@@ -34,42 +31,33 @@ export async function POST(request: Request) {
       },
     });
 
-   const info = await transporter.sendMail({
-  from: `"RIMAG - Site Web" <${process.env.SMTP_USER}>`,
-  to: process.env.CONTACT_EMAIL,
-  replyTo: email,
+    // Vérification de la connexion SMTP
+    await transporter.verify();
 
-  subject:
-    `RIMAG - ${subject || "Nouvelle demande"} - ${firstName} ${lastName}`,
-
-  text: `
-Nouvelle demande depuis le site RIMAG
-
-Nom : ${firstName} ${lastName}
-Email : ${email}
-Téléphone : ${phone || "Non renseigné"}
-Sujet : ${subject || "Non renseigné"}
-
-Message :
-${message}
-  `,
+  const info = await transporter.sendMail({
+  from: "contact@rimag.tn",
+  to: "foued.belajouza@gmail.com",
+  subject: "TEST RIMAG - Formulaire",
+  text: "Ceci est un test envoyé depuis le formulaire RIMAG.",
 });
 
 console.log("EMAIL ENVOYÉ :", info.messageId);
-console.log("ACCEPTED :", info.accepted);
-console.log("REJECTED :", info.rejected);
+console.log("RESPONSE SMTP :", info.response);
+
+    console.log("EMAIL ENVOYÉ :", info.messageId);
 
     return NextResponse.json({
       success: true,
       message: "Message envoyé avec succès.",
+      messageId: info.messageId,
     });
   } catch (error) {
-    console.error("Erreur API /api/contact :", error);
+    console.error("ERREUR SMTP :", error);
 
     return NextResponse.json(
       {
         success: false,
-        message: "Erreur lors de l'envoi du message.",
+        message: "Impossible d'envoyer le message.",
       },
       { status: 500 }
     );

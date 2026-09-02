@@ -236,7 +236,7 @@ export default function Header() {
 
               <span>
                 <i className="bi bi-envelope"></i>
-                contact@exporia.com
+                contact@rimag.tn
               </span>
 
             </div>
@@ -286,20 +286,18 @@ export default function Header() {
   aria-label="RIMAG Export"
 >
   <div className="brand__name">
+<div className="navbar-logo">
+    
+</div>
+    <Image
+                src="/images/avatar.png"
+                alt="Exporia"
+                width={92}
+                height={64}
+                className=""
+              />
 
-    <span className="brand__icon">
-      <i className="bi bi-globe2"></i>
-    </span>
-
-    <span className="brand__text">
-      <span className="brand__rimag">
-        RIMAG
-      </span>
-
-      <span className="brand__export">
-        EXPORT
-      </span>
-    </span>
+  
 
   </div>
 </Link>
