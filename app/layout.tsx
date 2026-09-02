@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Exporia | Export & Commerce International",
+export const metadata = {
+  title: "RIMAG EXPORT | Exportateur de produits alimentaires tunisiens",
   description:
-    "Exporia - Export et distribution de produits alimentaires et produits de grande consommation.",
+    "RIMAG EXPORT est une entreprise tunisienne spécialisée dans l'exportation de produits alimentaires, l'approvisionnement B2B et le commerce international.",
 };
 
 export default function RootLayout({
