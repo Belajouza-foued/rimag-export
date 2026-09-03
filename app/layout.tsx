@@ -16,15 +16,18 @@ export const metadata: Metadata = {
 
   keywords: [
     "RIMAG EXPORT",
-    "export alimentaire Tunisie",
-    "exportateur Tunisie",
-    "produits alimentaires tunisiens",
-    "export produits alimentaires",
-    "fournisseur alimentaire Tunisie",
-    "commerce international Tunisie",
-    "Tunisia food exporter",
-    "Tunisian food supplier",
-    "B2B food supplier",
+  "export alimentaire Tunisie",
+  "exportateur produits alimentaires Tunisie",
+  "produits alimentaires tunisiens",
+  "fournisseur alimentaire Tunisie",
+  "export produits alimentaires",
+  "commerce international Tunisie",
+  "importateurs alimentaires",
+  "grossistes alimentaires",
+  "Tunisian food exporter",
+  "Tunisian food products",
+  "Tunisian food supplier",
+  "B2B food supplier",
   ],
 
   authors: [
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "RIMAG EXPORT",
     title: "RIMAG EXPORT | Exportateur de produits alimentaires tunisiens",
     description:
-      "Exportation de produits alimentaires tunisiens et solutions d'approvisionnement B2B pour les marchés internationaux.",
+      "RIMAG EXPORT accompagne les importateurs, grossistes et distributeurs dans l'export de produits alimentaires depuis la Tunisie.",
   },
 
   twitter: {

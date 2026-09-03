@@ -44,9 +44,9 @@ heroText1:
   "Exporia accompagne ses partenaires dans l’exportation de produits alimentaires et de grande consommation.",
 heroProducts: "Découvrir nos produits",
 heroContact: "Nous contacter",
-heroRimag2: "Rimag Export",
-heroAccent20:"For trading",
-heroText20:"Des produits de qualité sélectionnés pour répondre aux exigences du commerce international et aux besoins de nos partenaires à travers le monde.",
+heroRimag2: "RIMAG EXPORT",
+heroAccent20:"Exportateur de produits tunisiens",
+heroText20:"RIMAG EXPORT accompagne les importateurs, grossistes et distributeurs dans l'approvisionnement et l'export de produits alimentaires depuis la Tunisie",
 heroTitle2: "Une sélection pensée",
 heroAccent2: "pour vos marchés",
 heroText2:
@@ -87,12 +87,12 @@ exportCard4Text:
 introAccent: "produits & marchés",
 
 introText1:
-  "Exporia est spécialisée dans l’exportation et le commerce international de produits alimentaires et de grande consommation.",
+  "RIMAG EXPORT est spécialisée dans l’exportation et le commerce international de produits alimentaires et de grande consommation.",
 
 introText2:
   "Nous proposons une gamme diversifiée destinée aux importateurs, distributeurs, grossistes et partenaires professionnels.",
 
-introLink: "Découvrir Exporia",
+introLink: "Découvrir RIMAG EXPORT",
 
 introStat1Title: "Large gamme",
 introStat1Text: "Produits alimentaires & FMCG",
@@ -268,11 +268,11 @@ aboutHeroEyebrow: "Qui sommes-nous",
 aboutHeroTitle: "À propos d’",
 
 aboutHeroText:
-  "Depuis plus de 15 ans, Exporia connecte producteurs et marchés internationaux à travers une offre fiable de produits alimentaires et de grande consommation.",
+  "Depuis plus de 15 ans, RIMAG EXPORT connecte producteurs et marchés internationaux à travers une offre fiable de produits alimentaires et de grande consommation.",
 
-aboutStoryImage1: "Équipe Exporia",
-aboutStoryImage2: "Transport maritime Exporia",
-aboutStoryImage3: "Logistique Exporia",
+aboutStoryImage1: "Équipe RIMAG EXPORT",
+aboutStoryImage2: "Transport maritime RIMAG EXPORT",
+aboutStoryImage3: "Logistique RIMAG EXPORT",
 
 aboutExperience: "Ans d’expérience",
 
@@ -343,7 +343,7 @@ aboutTimelineAccent: " de notre croissance",
 
 timelineYearStart: "Débuts",
 
-timelineTitleStart: "Création d’Exporia",
+timelineTitleStart: "Création de RIMAG EXPORT",
 
 timelineTextStart:
   "Lancement de l’activité d’export avec une première gamme de produits agroalimentaires.",
@@ -418,7 +418,7 @@ faqAnswer5:
   "Il vous suffit de remplir notre formulaire de contact en précisant les produits et volumes souhaités. Notre équipe vous recontacte sous 24h ouvrées avec une proposition adaptée à votre besoin.",
 
 faqImageAlt:
-  "Partenariat professionnel avec Exporia",
+  "Partenariat professionnel avec RIMAG EXPORT",
 
 faqBadgeTitle:
   "Une question ?",
@@ -963,12 +963,12 @@ exportCard4Text:
 introAccent: "products & markets",
 
 introText1:
-  "Exporia specializes in the export and international trade of food products and fast-moving consumer goods.",
+  "RIMAG EXPORT specializes in the export and international trade of food products and fast-moving consumer goods.",
 
 introText2:
   "We offer a diversified range designed for importers, distributors, wholesalers and professional partners.",
 
-introLink: "Discover Exporia",
+introLink: "Discover RIMAG EXPORT",
 
 introStat1Title: "Wide range",
 introStat1Text: "Food products & FMCG",
@@ -1144,11 +1144,11 @@ aboutHeroEyebrow: "Who we are",
 aboutHeroTitle: "About ",
 
 aboutHeroText:
-  "For over 15 years, Exporia has been connecting producers with international markets through a reliable range of food products and fast-moving consumer goods.",
+  "For over 15 years, RIMAG EXPORT has been connecting producers with international markets through a reliable range of food products and fast-moving consumer goods.",
 
-aboutStoryImage1: "Exporia team",
-aboutStoryImage2: "Exporia maritime transport",
-aboutStoryImage3: "Exporia logistics",
+aboutStoryImage1: "RIMAG EXPORT team",
+aboutStoryImage2: "RIMAG EXPORT maritime transport",
+aboutStoryImage3: "RIMAG EXPORT logistics",
 
 aboutExperience: "Years of experience",
 
@@ -1159,7 +1159,7 @@ aboutStoryTitle: "A trusted partner for",
 aboutStoryAccent: " your international trade",
 
 aboutStoryText1:
-  "Exporia was founded on a simple belief: international trade requires serious, responsive partners capable of securing every step, from product selection to final delivery.",
+  "RIMAG EXPORT was founded on a simple belief: international trade requires serious, responsive partners capable of securing every step, from product selection to final delivery.",
 
 aboutStoryText2:
   "Today, we support importers, distributors and wholesalers across several continents, with a diversified range covering food products, hygiene, construction and stationery.",
@@ -1219,7 +1219,7 @@ aboutTimelineAccent: " in our growth",
 
 timelineYearStart: "Beginnings",
 
-timelineTitleStart: "Exporia is founded",
+timelineTitleStart: "RIMAG EXPORT is founded",
 
 timelineTextStart:
   "Launch of the export activity with an initial range of food products.",
@@ -1294,7 +1294,7 @@ faqAnswer5:
   "Simply fill out our contact form with the products and quantities you require. Our team will get back to you within one business day with a proposal tailored to your needs.",
 
 faqImageAlt:
-  "Professional partnership with Exporia",
+  "Professional partnership with RIMAG EXPORT",
 
 faqBadgeTitle:
   "Have a question?",
@@ -1778,7 +1778,7 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-const STORAGE_KEY = "exporia-lang";
+const STORAGE_KEY = "rimag-lang";
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("fr");

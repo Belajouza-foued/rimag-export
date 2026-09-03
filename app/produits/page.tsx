@@ -4,9 +4,9 @@ import styles from "./produits.module.css";
 import Header from "@/components/Header";
 
 export const metadata = {
-  title: "Produits | Exporia",
+  title: "Produits | RIMAG EXPORT",
   description:
-    "Découvrez les produits alimentaires tunisiens sélectionnés par Exporia pour l'export international.",
+    "Découvrez les produits alimentaires tunisiens sélectionnés par RIMAG EXPORT pour l'export international.",
 };
 
 export default function ProduitsPage() {
