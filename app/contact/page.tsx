@@ -42,10 +42,13 @@ export default function ContactPage() {
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(result.message || "Erreur d'envoi");
+        throw new Error(
+          result.message || "Erreur lors de l'envoi"
+        );
       }
 
       setStatus("success");
+
       form.reset();
 
       setTimeout(() => {
@@ -53,6 +56,7 @@ export default function ContactPage() {
       }, 6000);
     } catch (error) {
       console.error("Erreur formulaire contact :", error);
+
       setStatus("error");
     }
   };
@@ -61,7 +65,9 @@ export default function ContactPage() {
     <>
       <Header />
 
-      {/* HERO */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
@@ -71,28 +77,34 @@ export default function ContactPage() {
             </span>
 
             <h1>
-              Contactez <span>Exporia</span>
+              Contactez <span>RIMAG EXPORT</span>
             </h1>
 
             <p>
-              Une question, un besoin d&apos;approvisionnement ou un projet
-              d&apos;export ? Notre équipe vous répond rapidement.
+              Une question, un besoin d&apos;approvisionnement ou
+              un projet d&apos;export ? Notre équipe vous répond
+              rapidement.
             </p>
 
             <div className={styles.breadcrumb}>
               <Link href="/">Accueil</Link>
+
               <span>/</span>
+
               <span>Contact</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* INFO CARDS */}
+      {/* =====================================================
+          INFORMATIONS DE CONTACT
+      ===================================================== */}
       <section className={styles.infoStrip}>
         <div className="container">
           <div className={styles.infoGrid}>
 
+            {/* ADRESSE */}
             <div className={styles.infoCard}>
               <div className={styles.infoCard__icon}>
                 <i className="bi bi-geo-alt-fill"></i>
@@ -104,6 +116,7 @@ export default function ContactPage() {
               </div>
             </div>
 
+            {/* TELEPHONE */}
             <div className={styles.infoCard}>
               <div className={styles.infoCard__icon}>
                 <i className="bi bi-telephone-fill"></i>
@@ -115,6 +128,7 @@ export default function ContactPage() {
               </div>
             </div>
 
+            {/* EMAIL */}
             <div className={styles.infoCard}>
               <div className={styles.infoCard__icon}>
                 <i className="bi bi-envelope-fill"></i>
@@ -130,56 +144,72 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* IMAGE + FORMULAIRE */}
+      {/* =====================================================
+          IMAGE + FORMULAIRE
+      ===================================================== */}
       <section className={styles.mainSection}>
         <div className="container">
           <div className={styles.grid}>
 
-            {/* IMAGE */}
+            {/* =================================================
+                IMAGE
+            ================================================= */}
             <div className={styles.imageWrap}>
+
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/contact-2.avif"
-                alt="Contact Exporia"
+                alt="Contact RIMAG EXPORT"
               />
 
               <div className={styles.imageOverlay}></div>
 
               <div className={styles.imageBadge}>
+
                 <span>
                   <i className="bi bi-headset"></i>
                   Disponible 24/7
                 </span>
 
-                <h3>Une équipe à votre écoute</h3>
+                <h3>
+                  Une équipe à votre écoute
+                </h3>
 
                 <p>
                   Nous répondons à vos demandes d&apos;export et de
                   partenariat sous 24h ouvrées.
                 </p>
+
               </div>
             </div>
 
-            {/* FORMULAIRE */}
+            {/* =================================================
+                FORMULAIRE
+            ================================================= */}
             <div className={styles.formCard}>
 
               <span className={styles.formLabel}>
                 Formulaire de contact
               </span>
 
-              <h2>Envoyez-nous un message</h2>
+              <h2>
+                Envoyez-nous un message
+              </h2>
 
               <p>
-                Remplissez le formulaire ci-dessous, notre équipe vous
-                recontactera dans les plus brefs délais.
+                Remplissez le formulaire ci-dessous, notre équipe
+                vous recontactera dans les plus brefs délais.
               </p>
 
               <form onSubmit={handleSubmit}>
 
-                {/* PRÉNOM + NOM */}
+                {/* =============================================
+                    PRENOM + NOM
+                ============================================= */}
                 <div className={styles.formRow}>
 
                   <div className={styles.formGroup}>
+
                     <label htmlFor="firstName">
                       Prénom
                     </label>
@@ -192,9 +222,11 @@ export default function ContactPage() {
                       required
                       disabled={status === "sending"}
                     />
+
                   </div>
 
                   <div className={styles.formGroup}>
+
                     <label htmlFor="lastName">
                       Nom
                     </label>
@@ -207,14 +239,18 @@ export default function ContactPage() {
                       required
                       disabled={status === "sending"}
                     />
+
                   </div>
 
                 </div>
 
-                {/* EMAIL + TÉLÉPHONE */}
+                {/* =============================================
+                    EMAIL + TELEPHONE
+                ============================================= */}
                 <div className={styles.formRow}>
 
                   <div className={styles.formGroup}>
+
                     <label htmlFor="email">
                       Email
                     </label>
@@ -227,9 +263,11 @@ export default function ContactPage() {
                       required
                       disabled={status === "sending"}
                     />
+
                   </div>
 
                   <div className={styles.formGroup}>
+
                     <label htmlFor="phone">
                       Téléphone
                     </label>
@@ -241,11 +279,14 @@ export default function ContactPage() {
                       placeholder="+216 XX XXX XXX"
                       disabled={status === "sending"}
                     />
+
                   </div>
 
                 </div>
 
-                {/* SUJET */}
+                {/* =============================================
+                    SUJET
+                ============================================= */}
                 <div className={styles.formGroup}>
 
                   <label htmlFor="subject">
@@ -258,6 +299,7 @@ export default function ContactPage() {
                     defaultValue=""
                     disabled={status === "sending"}
                   >
+
                     <option value="" disabled>
                       Choisissez un sujet
                     </option>
@@ -277,11 +319,14 @@ export default function ContactPage() {
                     <option value="Autre">
                       Autre
                     </option>
+
                   </select>
 
                 </div>
 
-                {/* MESSAGE */}
+                {/* =============================================
+                    MESSAGE
+                ============================================= */}
                 <div className={styles.formGroup}>
 
                   <label htmlFor="message">
@@ -298,12 +343,15 @@ export default function ContactPage() {
 
                 </div>
 
-                {/* BOUTON */}
+                {/* =============================================
+                    BOUTON ENVOYER
+                ============================================= */}
                 <button
                   type="submit"
                   className={styles.submitBtn}
                   disabled={status === "sending"}
                 >
+
                   {status === "sending" ? (
                     <>
                       Envoi en cours...
@@ -315,36 +363,49 @@ export default function ContactPage() {
                       <i className="bi bi-arrow-right"></i>
                     </>
                   )}
+
                 </button>
 
-                {/* SUCCÈS */}
+                {/* =============================================
+                    MESSAGE SUCCES
+                ============================================= */}
                 {status === "success" && (
                   <div
                     className={`${styles.formStatus} ${styles.formStatusSuccess}`}
                   >
+
                     <i className="bi bi-check-circle-fill"></i>
 
-                    Votre message a bien été envoyé.
-                    Nous vous répondrons rapidement.
+                    <span>
+                      Votre message a bien été envoyé.
+                      Nous vous répondrons rapidement.
+                    </span>
+
                   </div>
                 )}
 
-                {/* ERREUR */}
+                {/* =============================================
+                    MESSAGE ERREUR
+                ============================================= */}
                 {status === "error" && (
                   <div
                     className={`${styles.formStatus} ${styles.formStatusError}`}
                   >
+
                     <i className="bi bi-exclamation-triangle-fill"></i>
 
-                    Une erreur est survenue lors de l&apos;envoi.
-                    Merci de réessayer ou de nous contacter
-                    directement par email.
+                    <span>
+                      Une erreur est survenue lors de l&apos;envoi.
+                      Merci de réessayer ou de nous contacter
+                      directement par email.
+                    </span>
+
                   </div>
                 )}
 
               </form>
-            </div>
 
+            </div>
           </div>
         </div>
       </section>

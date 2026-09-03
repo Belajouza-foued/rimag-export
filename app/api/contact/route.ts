@@ -37,17 +37,19 @@ export async function POST(req: Request) {
 
     // Vérification SMTP
     await transporter.verify();
+console.log("SMTP_FROM =", process.env.SMTP_FROM);
+console.log("SMTP_TO =", process.env.SMTP_TO);
+console.log("SMTP_USER =", process.env.SMTP_USER);
+  const info = await transporter.sendMail({
+  from: `"RIMAG EXPORT" <${process.env.SMTP_FROM}>`,
+  to: process.env.SMTP_TO,
+  replyTo: email,
 
-    const info = await transporter.sendMail({
-      from: `"RIMAG EXPORT" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_USER,
-      replyTo: email,
+  subject: subject
+    ? `RIMAG EXPORT - ${subject}`
+    : "Nouveau message - RIMAG EXPORT",
 
-      subject: subject
-        ? `RIMAG EXPORT - ${subject}`
-        : "Nouveau message - RIMAG EXPORT",
-
-      text: `
+  text: `
 NOUVEAU MESSAGE DEPUIS LE SITE RIMAG EXPORT
 
 Prénom : ${firstName}
@@ -58,27 +60,8 @@ Sujet : ${subject || "Non renseigné"}
 
 Message :
 ${message}
-      `,
-
-      html: `
-        <h2>Nouveau message depuis le site RIMAG EXPORT</h2>
-
-        <p><strong>Prénom :</strong> ${firstName}</p>
-        <p><strong>Nom :</strong> ${lastName}</p>
-        <p><strong>Email :</strong> ${email}</p>
-        <p><strong>Téléphone :</strong> ${
-          phone || "Non renseigné"
-        }</p>
-        <p><strong>Sujet :</strong> ${
-          subject || "Non renseigné"
-        }</p>
-
-        <hr />
-
-        <h3>Message</h3>
-        <p>${message.replace(/\n/g, "<br />")}</p>
-      `,
-    });
+  `,
+});
 
     console.log("EMAIL ENVOYÉ :", info.messageId);
     console.log("RESPONSE SMTP :", info.response);
