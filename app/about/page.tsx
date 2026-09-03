@@ -16,8 +16,8 @@ export default function AboutPage() {
     <>
       <Header />
 <AboutContent />
-<AboutFaq/>
 <Intro/>
+<AboutFaq/>
 <CTA />
       <Footer />
     </>

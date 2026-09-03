@@ -781,55 +781,70 @@ text-decoration: none;
 }
 
 .intro-stats {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .stat-box {
-    padding: 28px;
+  padding: 28px;
 
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
 
-    background: var(--white);
+  background: var(--white);
 
-    box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 
-    transition: transform var(--transition);
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    color var(--transition);
 }
 
 .stat-box:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+  background: var(--blue);
 }
 
 .stat-box i {
-    display: block;
+  display: block;
 
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 
-    color: var(--red);
+  color: var(--red);
+  font-size: 30px;
 
-    font-size: 30px;
+  transition: color var(--transition);
 }
 
 .stat-box strong {
-    display: block;
+  display: block;
 
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    color: var(--blue);
+  color: var(--blue);
+  font-size: 16px;
 
-    font-size: 16px;
+  transition: color var(--transition);
 }
 
 .stat-box span {
-    color: var(--text-muted);
-    font-size: 13px;
+  color: var(--text-muted);
+  font-size: 13px;
+
+  transition: color var(--transition);
 }
 
+/* HOVER */
+.stat-box:hover i {
+  color: var(--yellow);
+}
+
+.stat-box:hover strong,
+.stat-box:hover span {
+  color: var(--white);
+}
 
 /* =====================================================
    PRODUCTS CAROUSEL
