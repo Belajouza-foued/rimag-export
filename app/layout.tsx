@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import StructuredData from "@/components/StructuredData";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -104,9 +105,13 @@ export default function RootLayout({
         />
       </head>
 
-      <body>
-        <LanguageProvider>{children}</LanguageProvider>
-      </body>
+  <body>
+  <StructuredData />
+
+  <LanguageProvider>
+    {children}
+  </LanguageProvider>
+</body>
     </html>
   );
 }
