@@ -17,7 +17,7 @@ export default function Intro() {
 
           <div className="intro-content">
             <span className="section-label">
-              Exporia
+              RIMAG EXPORT
             </span>
 
             <h2>

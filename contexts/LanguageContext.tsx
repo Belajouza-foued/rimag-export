@@ -44,7 +44,7 @@ heroText1:
   "Exporia accompagne ses partenaires dans l’exportation de produits alimentaires et de grande consommation.",
 heroProducts: "Découvrir nos produits",
 heroContact: "Nous contacter",
-heroRimag2: "RIMAG EXPORT",
+heroRimag: "RIMAG EXPORT",
 heroAccent20:"Exportateur de produits tunisiens",
 heroText20:"RIMAG EXPORT accompagne les importateurs, grossistes et distributeurs dans l'approvisionnement et l'export de produits alimentaires depuis la Tunisie",
 heroTitle2: "Une sélection pensée",
@@ -283,7 +283,7 @@ aboutStoryTitle: "Un partenaire de confiance pour",
 aboutStoryAccent: " vos échanges internationaux",
 
 aboutStoryText1:
-  "Exporia est née d’une conviction simple : le commerce international mérite des partenaires sérieux, réactifs et capables de sécuriser chaque étape, de la sélection du produit jusqu’à sa livraison.",
+  "RIMAG EXPORT est née d’une conviction simple : le commerce international mérite des partenaires sérieux, réactifs et capables de sécuriser chaque étape, de la sélection du produit jusqu’à sa livraison.",
 
 aboutStoryText2:
   "Nous accompagnons aujourd’hui des importateurs, distributeurs et grossistes à travers plusieurs continents, avec une gamme diversifiée couvrant l’agroalimentaire, l’hygiène, la construction et la papeterie.",
@@ -920,7 +920,7 @@ heroText1:
   "Exporia supports its partners in exporting food products and fast-moving consumer goods.",
 heroProducts: "Discover our products",
 heroContact: "Contact us",
-heroRimag2: "Rimag Export",
+heroRimag: "RIMAG EXPORT",
 heroAccent20:"For trading",
 heroText20: "Quality products carefully selected to meet the demands of international trade and the needs of our partners worldwide.",
 heroTitle2: "A carefully selected range",

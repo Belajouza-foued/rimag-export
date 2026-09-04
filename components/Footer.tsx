@@ -56,7 +56,7 @@ export default function Footer() {
             >
               <Image
                 src="/images/exporia.png"
-                alt="Exporia"
+                alt="rimag export footer logo"
                 width={56}
                 height={56}
                 className={styles.brandLogo}
@@ -213,8 +213,8 @@ export default function Footer() {
               <li>
                 <i className="bi bi-telephone-fill"></i>
 
-                <a href="tel:+216XXXXXXXX">
-                  +216 XX XXX XXX
+                <a href="tel:+21693244860">
+                  +216 93 244 860
                 </a>
               </li>
 
@@ -223,7 +223,7 @@ export default function Footer() {
               <li>
                 <i className="bi bi-envelope-fill"></i>
 
-                <a href="mailto:contact@exporia.com">
+                <a href="mailto:contact@rimag.tn">
                   contact@rimag.tn
                 </a>
               </li>

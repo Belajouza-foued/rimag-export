@@ -11,7 +11,7 @@ export default function CTA() {
             <h2>Vous recherchez un partenaire pour vos approvisionnements ?</h2>
 
             <p>
-              Contactez Exporia pour discuter de vos besoins et obtenir une
+              Contactez RIMAG EXPORT pour discuter de vos besoins et obtenir une
               offre adaptée.
             </p>
           </div>
