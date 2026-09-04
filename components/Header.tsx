@@ -252,9 +252,14 @@ export default function Header() {
                 <i className="bi bi-instagram"></i>
               </a>
 
-              <a href="#" aria-label="WhatsApp">
-                <i className="bi bi-whatsapp"></i>
-              </a>
+             <a
+  href="https://wa.me/21693244860"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp"
+>
+  <i className="bi bi-whatsapp"></i>
+</a>
 
               <LanguageSwitcher variant="desktop" />
 

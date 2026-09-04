@@ -213,8 +213,8 @@ export default function Footer() {
               <li>
                 <i className="bi bi-telephone-fill"></i>
 
-                <a href="tel:+21693244860">
-                  +216 93 244 860
+                <a href="tel:+21658860181">
+                  +216 58 860 181
                 </a>
               </li>
 

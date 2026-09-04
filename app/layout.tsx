@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import Script from "next/script";
 import StructuredData from "@/components/StructuredData";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
@@ -115,7 +116,20 @@ export default function RootLayout({
   <LanguageProvider>
     {children}
   </LanguageProvider>
-  <WhatsAppButton/>
+   <WhatsAppButton/>
+   <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-D8TSVZ3LL7"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D8TSVZ3LL7');
+  `}
+</Script>
 </body>
     </html>
   );
