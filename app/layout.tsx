@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import StructuredData from "@/components/StructuredData";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -114,6 +115,7 @@ export default function RootLayout({
   <LanguageProvider>
     {children}
   </LanguageProvider>
+  <WhatsAppButton/>
 </body>
     </html>
   );
