@@ -112,7 +112,7 @@ export default function ContactPage() {
 
               <div>
                 <h3>Adresse</h3>
-                <p>Tunisie</p>
+                <p className={styles.numberContact}>Tunisie</p>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ export default function ContactPage() {
 
               <div>
                 <h3>Téléphone</h3>
-                <p>+216 23 782 889</p>
+                <p className={styles.numberContact}>+216 23 782 889</p>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function ContactPage() {
 
               <div>
                 <h3>Email</h3>
-                <p>contact@rimag.tn</p>
+                <p className={styles.numberContact}>contact@rimag.tn</p>
               </div>
             </div>
 

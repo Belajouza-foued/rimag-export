@@ -517,7 +517,10 @@
     border: 1px solid #F5C2C2;
     color: var(--red-dark);
 }
-
+.numberContact {
+      font-weight: bold;
+      font-size: 14px !important;
+}
 
 /* =====================================================
    KEYFRAMES
@@ -651,4 +654,5 @@
     .imageWrap img {
         transition: none;
     }
+    
 }
