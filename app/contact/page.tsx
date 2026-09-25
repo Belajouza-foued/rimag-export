@@ -124,7 +124,7 @@ export default function ContactPage() {
 
               <div>
                 <h3>Téléphone</h3>
-                <p>+216 58 860 181</p>
+                <p>+216 23 782 889</p>
               </div>
             </div>
 

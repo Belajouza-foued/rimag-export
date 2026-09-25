@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const phone = "21693244860";
+  const phone = "21623782889";
 
   const message = encodeURIComponent(
     "Bonjour RIMAG EXPORT, je souhaite avoir plus d'informations sur vos produits."
